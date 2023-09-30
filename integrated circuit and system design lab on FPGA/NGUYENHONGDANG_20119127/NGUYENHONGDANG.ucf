@@ -1,0 +1,10 @@
+
+
+NET "clki" LOC = C9;
+NET "clko" LOC = F8;
+NET "stb" LOC = E8;
+NET "dio" LOC = C7;
+
+# PlanAhead Generated physical constraints 
+
+NET "sw" LOC = L13;

@@ -1,0 +1,23 @@
+NET "w[1]" IOSTANDARD = LVCMOS25;
+NET "w[0]" IOSTANDARD = LVCMOS25;
+NET "y[3]" IOSTANDARD = LVCMOS25;
+NET "y[3]" DRIVE = 12;
+NET "y[3]" SLEW = SLOW;
+NET "y[2]" IOSTANDARD = LVCMOS25;
+NET "y[2]" DRIVE = 12;
+NET "y[2]" SLEW = SLOW;
+NET "y[1]" IOSTANDARD = LVCMOS25;
+NET "y[1]" DRIVE = 12;
+NET "y[1]" SLEW = SLOW;
+NET "y[0]" IOSTANDARD = LVCMOS25;
+NET "y[0]" DRIVE = 12;
+NET "y[0]" SLEW = SLOW;
+
+# PlanAhead Generated physical constraints 
+
+NET "w[1]" LOC = L14;
+NET "w[0]" LOC = L13;
+NET "y[0]" LOC = F12;
+NET "y[1]" LOC = E12;
+NET "y[2]" LOC = E11;
+NET "y[3]" LOC = F11;

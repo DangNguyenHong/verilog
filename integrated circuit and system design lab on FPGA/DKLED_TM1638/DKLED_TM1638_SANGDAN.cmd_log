@@ -1,0 +1,22 @@
+xst -intstyle ise -ifn "D:/IC lab/DKLED_TM1638/DKLED_TM1638_SANGDAN.xst" -ofn "D:/IC lab/DKLED_TM1638/DKLED_TM1638_SANGDAN.syr" 
+xst -intstyle ise -ifn "D:/IC lab/DKLED_TM1638/DKLED_TM1638_SANGDAN.xst" -ofn "D:/IC lab/DKLED_TM1638/DKLED_TM1638_SANGDAN.syr" 
+xst -intstyle ise -ifn "D:/IC lab/DKLED_TM1638/DKLED_TM1638_SANGDAN.xst" -ofn "D:/IC lab/DKLED_TM1638/DKLED_TM1638_SANGDAN.syr" 
+xst -intstyle ise -ifn "D:/IC lab/DKLED_TM1638/DKLED_TM1638_SANGDAN.xst" -ofn "D:/IC lab/DKLED_TM1638/DKLED_TM1638_SANGDAN.syr" 
+xst -intstyle ise -ifn "D:/IC lab/DKLED_TM1638/DKLED_TM1638_SANGDAN.xst" -ofn "D:/IC lab/DKLED_TM1638/DKLED_TM1638_SANGDAN.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DKLED_TM1638_SANGDAN.ucf -p xc3s500e-fg320-4 "DKLED_TM1638_SANGDAN.ngc" DKLED_TM1638_SANGDAN.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o DKLED_TM1638_SANGDAN_map.ncd DKLED_TM1638_SANGDAN.ngd DKLED_TM1638_SANGDAN.pcf 
+par -w -intstyle ise -ol high -t 1 DKLED_TM1638_SANGDAN_map.ncd DKLED_TM1638_SANGDAN.ncd DKLED_TM1638_SANGDAN.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml DKLED_TM1638_SANGDAN.twx DKLED_TM1638_SANGDAN.ncd -o DKLED_TM1638_SANGDAN.twr DKLED_TM1638_SANGDAN.pcf -ucf DKLED_TM1638_SANGDAN.ucf 
+bitgen -intstyle ise -f DKLED_TM1638_SANGDAN.ut DKLED_TM1638_SANGDAN.ncd 
+xst -intstyle ise -ifn "D:/IC lab/DKLED_TM1638/DKLED_TM1638_SANGDAN.xst" -ofn "D:/IC lab/DKLED_TM1638/DKLED_TM1638_SANGDAN.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DKLED_TM1638_SANGDAN.ucf -p xc3s500e-fg320-4 "DKLED_TM1638_SANGDAN.ngc" DKLED_TM1638_SANGDAN.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o DKLED_TM1638_SANGDAN_map.ncd DKLED_TM1638_SANGDAN.ngd DKLED_TM1638_SANGDAN.pcf 
+par -w -intstyle ise -ol high -t 1 DKLED_TM1638_SANGDAN_map.ncd DKLED_TM1638_SANGDAN.ncd DKLED_TM1638_SANGDAN.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml DKLED_TM1638_SANGDAN.twx DKLED_TM1638_SANGDAN.ncd -o DKLED_TM1638_SANGDAN.twr DKLED_TM1638_SANGDAN.pcf -ucf DKLED_TM1638_SANGDAN.ucf 
+bitgen -intstyle ise -f DKLED_TM1638_SANGDAN.ut DKLED_TM1638_SANGDAN.ncd 
+xst -intstyle ise -ifn "D:/IC lab/DKLED_TM1638/DKLED_TM1638_SANGDAN.xst" -ofn "D:/IC lab/DKLED_TM1638/DKLED_TM1638_SANGDAN.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DKLED_TM1638_SANGDAN.ucf -p xc3s500e-fg320-4 "DKLED_TM1638_SANGDAN.ngc" DKLED_TM1638_SANGDAN.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o DKLED_TM1638_SANGDAN_map.ncd DKLED_TM1638_SANGDAN.ngd DKLED_TM1638_SANGDAN.pcf 
+par -w -intstyle ise -ol high -t 1 DKLED_TM1638_SANGDAN_map.ncd DKLED_TM1638_SANGDAN.ncd DKLED_TM1638_SANGDAN.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml DKLED_TM1638_SANGDAN.twx DKLED_TM1638_SANGDAN.ncd -o DKLED_TM1638_SANGDAN.twr DKLED_TM1638_SANGDAN.pcf -ucf DKLED_TM1638_SANGDAN.ucf 
+bitgen -intstyle ise -f DKLED_TM1638_SANGDAN.ut DKLED_TM1638_SANGDAN.ncd 

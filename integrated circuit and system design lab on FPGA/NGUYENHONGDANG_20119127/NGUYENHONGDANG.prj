@@ -1,0 +1,6 @@
+verilog work "../COUNTER_TM1638/ADD3.v"
+verilog work "../TM1638/TM1638.v"
+verilog work "../DKLED_TM1638/CHIAXUNG.v"
+verilog work "../COUNTER_TM1638/HEX_BCD.v"
+verilog work "../COUNTER_TM1638/COUNTER.v"
+verilog work "NGUYENHONGDANG.v"

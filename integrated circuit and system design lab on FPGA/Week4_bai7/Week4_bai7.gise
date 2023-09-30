@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Week4_bai7.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="CHIAXUNG.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="CHIAXUNG.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="CHIAXUNG.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="CHOPTAT_test_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="DEMUX14.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="DEMUX14.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="DEMUX14.xst"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="GENERAL.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="GENERAL.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="GENERAL.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="GENERAL.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="GENERAL.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="GENERAL.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="GENERAL.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="GENERAL.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="GENERAL_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="GENERAL_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="GENERAL_test_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="GENERAL_test_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="GENERAL_test_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="GENERAL_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="LEDCHOPTAT.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="LEDCHOPTAT.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="LEDCHOPTAT.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="LEDSANGDON_test_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="LEDSANG_TATDAN.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="LEDSANG_TATDAN.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="LEDSANG_TATDAN.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="LED_TSP_PST_TUDONG.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="LED_TSP_PST_TUDONG.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="LED_TSP_PST_TUDONG.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="MODE2_test_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MODE2_test_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1695151007" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1695151007">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1695156130" xil_pn:in_ck="5143053405898867485" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1695156130">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="CHIAXUNG.v"/>
+      <outfile xil_pn:name="CHOPTAT_test.v"/>
+      <outfile xil_pn:name="DEMUX14.v"/>
+      <outfile xil_pn:name="GENERAL.v"/>
+      <outfile xil_pn:name="GENERAL_test.v"/>
+      <outfile xil_pn:name="LEDCHOPTAT.v"/>
+      <outfile xil_pn:name="LEDSANGDON.v"/>
+      <outfile xil_pn:name="LEDSANGDON_test.v"/>
+      <outfile xil_pn:name="LEDSANG_TATDAN.v"/>
+      <outfile xil_pn:name="LED_TSP_PST_TUDONG.v"/>
+      <outfile xil_pn:name="MODE2_test.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1695155086" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-4154151918442722508" xil_pn:start_ts="1695155086">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1695155086" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-9111693443753166730" xil_pn:start_ts="1695155086">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1695155086" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-2276715078766829667" xil_pn:start_ts="1695155086">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1695156130" xil_pn:in_ck="5143053405898867485" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1695156130">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="CHIAXUNG.v"/>
+      <outfile xil_pn:name="CHOPTAT_test.v"/>
+      <outfile xil_pn:name="DEMUX14.v"/>
+      <outfile xil_pn:name="GENERAL.v"/>
+      <outfile xil_pn:name="GENERAL_test.v"/>
+      <outfile xil_pn:name="LEDCHOPTAT.v"/>
+      <outfile xil_pn:name="LEDSANGDON.v"/>
+      <outfile xil_pn:name="LEDSANGDON_test.v"/>
+      <outfile xil_pn:name="LEDSANG_TATDAN.v"/>
+      <outfile xil_pn:name="LED_TSP_PST_TUDONG.v"/>
+      <outfile xil_pn:name="MODE2_test.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1695156134" xil_pn:in_ck="5143053405898867485" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-2329589044483349367" xil_pn:start_ts="1695156130">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="GENERAL_test_beh.prj"/>
+      <outfile xil_pn:name="GENERAL_test_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1695156135" xil_pn:in_ck="-2695228181867554049" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-172372204148276180" xil_pn:start_ts="1695156134">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="GENERAL_test_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
+    <transform xil_pn:end_ts="1695154666" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1695154666">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1695154666" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="7804054837288102135" xil_pn:start_ts="1695154666">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1695154666" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-2276715078766829667" xil_pn:start_ts="1695154666">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1695154666" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1695154666">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1695154666" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="5071420822411801077" xil_pn:start_ts="1695154666">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1695154666" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3893270297158069842" xil_pn:start_ts="1695154666">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1695154666" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="6726046233185583975" xil_pn:start_ts="1695154666">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1695169533" xil_pn:in_ck="-1455208730536682134" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="8148410883129347824" xil_pn:start_ts="1695169520">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name=".lso"/>
+      <outfile xil_pn:name="GENERAL.lso"/>
+      <outfile xil_pn:name="GENERAL.ngc"/>
+      <outfile xil_pn:name="GENERAL.ngr"/>
+      <outfile xil_pn:name="GENERAL.prj"/>
+      <outfile xil_pn:name="GENERAL.stx"/>
+      <outfile xil_pn:name="GENERAL.syr"/>
+      <outfile xil_pn:name="GENERAL.xst"/>
+      <outfile xil_pn:name="GENERAL_test_beh.prj"/>
+      <outfile xil_pn:name="GENERAL_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+  </transforms>
+
+</generated_project>

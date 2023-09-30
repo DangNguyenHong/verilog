@@ -1,0 +1,28 @@
+Command line:
+   DKLEDSANGDAN_TATHET_test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  61361
+
+Wed Sep 27 09:19:02 2023
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 5149.91 Meg
+
+ Total Signals          : 15
+ Total Nets             : 22
+ Total Signal Drivers   : 7
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 11
+ Total Traceable Variables  : 20
+ Total Scalar Nets and Variables : 111
+
+ Total Simulation Time: 0.046875 sec
+
+ Current Memory Usage: 5149.91 Meg
+
+Wed Sep 27 09:19:10 2023
+

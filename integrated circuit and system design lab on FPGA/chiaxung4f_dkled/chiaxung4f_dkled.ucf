@@ -1,0 +1,8 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "clkOut" LOC = F12;
+NET "sel[1]" LOC = L13;
+NET "sel[0]" LOC = L14;
+NET "reset" LOC = H18;
+NET "clk" LOC = C9;

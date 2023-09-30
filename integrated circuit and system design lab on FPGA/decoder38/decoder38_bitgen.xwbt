@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\IC lab\decoder38\decoder38.ncd
+OUTFILE=D:\IC lab\decoder38\decoder38.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=D:\IC lab\decoder38
+LICENSE=ISE
+USER_INFO=212545845_0_0_004

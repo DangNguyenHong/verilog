@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=D:\IC lab\decoder_2_4\impact.xsl
+OUTFILE=D:\IC lab\decoder_2_4\impact.xsl
+FAMILY=Multiple
+PART=Multiple
+WORKINGDIR=D:\IC lab\decoder_2_4
+LICENSE=iMPACT
+USER_INFO=iMPACT

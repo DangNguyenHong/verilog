@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "D:/IC lab/chiaxung4f_dkled/chiaxung4f_dkled_test_isim_beh.exe" -prj "D:/IC lab/chiaxung4f_dkled/chiaxung4f_dkled_test_beh.prj" "work.chiaxung4f_dkled_test" "work.glbl" 

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "D:/IC lab/DKLED_TM1638/DKLEDSANGDAN_TATHET_test_isim_beh.exe" -prj "D:/IC lab/DKLED_TM1638/DKLEDSANGDAN_TATHET_test_beh.prj" "work.DKLEDSANGDAN_TATHET_test" "work.glbl" 

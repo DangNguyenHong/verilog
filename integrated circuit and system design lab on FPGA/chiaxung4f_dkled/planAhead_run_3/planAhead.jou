@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Wed Sep 13 09:17:29 2023
+# Process ID: 2852
+# Log file: D:/IC lab/chiaxung4f_dkled/planAhead_run_3/planAhead.log
+# Journal file: D:/IC lab/chiaxung4f_dkled/planAhead_run_3/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {D:/IC lab/chiaxung4f_dkled/pa.fromHdl.tcl}
+update_compile_order -fileset sim_1

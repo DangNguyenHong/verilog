@@ -1,0 +1,31 @@
+Running: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o D:/IC lab/Week4_bai7/GENERAL_test_isim_beh.exe -prj D:/IC lab/Week4_bai7/GENERAL_test_beh.prj work.GENERAL_test work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/IC lab/Week4_bai7/LED_TSP_PST_TUDONG.v" into library work
+Analyzing Verilog file "D:/IC lab/Week4_bai7/LEDSANG_TATDAN.v" into library work
+Analyzing Verilog file "D:/IC lab/Week4_bai7/LEDSANGDON.v" into library work
+Analyzing Verilog file "D:/IC lab/Week4_bai7/LEDCHOPTAT.v" into library work
+Analyzing Verilog file "D:/IC lab/Week4_bai7/DEMUX14.v" into library work
+Analyzing Verilog file "D:/IC lab/Week4_bai7/CHIAXUNG.v" into library work
+Analyzing Verilog file "D:/IC lab/Week4_bai7/GENERAL.v" into library work
+Analyzing Verilog file "D:/IC lab/Week4_bai7/GENERAL_test.v" into library work
+Analyzing Verilog file "D:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module CHIAXUNG
+Compiling module DEMUX14
+Compiling module LEDCHOPTAT
+Compiling module LEDSANG_TATDAN
+Compiling module LED_TSP_PST_TUDONG
+Compiling module LEDSANGDON
+Compiling module GENERAL
+Compiling module GENERAL_test
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 2 sub-compilation(s) to finish...
+Compiled 9 Verilog Units
+Built simulation executable D:/IC lab/Week4_bai7/GENERAL_test_isim_beh.exe
+Fuse Memory Usage: 28548 KB
+Fuse CPU Usage: 593 ms

@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Fri Sep 29 01:01:41 2023
+# Process ID: 8020
+# Log file: D:/IC lab/NGUYENHONGDANG_20119127_test2/planAhead_run_1/planAhead.log
+# Journal file: D:/IC lab/NGUYENHONGDANG_20119127_test2/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {D:/IC lab/NGUYENHONGDANG_20119127_test2/pa.fromHdl.tcl}
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin C9 [get_ports clki]
+endgroup
+startgroup
+set_property package_pin F8 [get_ports clko]
+endgroup
+startgroup
+set_property package_pin C7 [get_ports dio]
+endgroup
+startgroup
+set_property package_pin E8 [get_ports stb]
+endgroup
+startgroup
+set_property package_pin L13 [get_ports sw0]
+endgroup
+startgroup
+set_property package_pin L14 [get_ports sw1]
+endgroup
+startgroup
+set_property package_pin H18 [get_ports sw2]
+endgroup
+save_constraints

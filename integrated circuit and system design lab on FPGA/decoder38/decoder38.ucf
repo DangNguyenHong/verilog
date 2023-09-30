@@ -1,0 +1,14 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "w[2]" LOC = H18;
+NET "w[1]" LOC = L14;
+NET "w[0]" LOC = L13;
+NET "y[7]" LOC = F9;
+NET "y[6]" LOC = E9;
+NET "y[5]" LOC = D11;
+NET "y[4]" LOC = C11;
+NET "y[3]" LOC = F11;
+NET "y[2]" LOC = E11;
+NET "y[1]" LOC = E12;
+NET "y[0]" LOC = F12;

@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Fri Sep 29 01:10:31 2023
+# Process ID: 9888
+# Log file: D:/IC lab/NGUYENHONGDANG_20119127_test2/planAhead_run_2/planAhead.log
+# Journal file: D:/IC lab/NGUYENHONGDANG_20119127_test2/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {D:/IC lab/NGUYENHONGDANG_20119127_test2/pa.fromHdl.tcl}
+update_compile_order -fileset sim_1

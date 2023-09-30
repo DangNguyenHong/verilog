@@ -1,0 +1,8 @@
+
+
+NET "sel[1]" LOC = L14;
+NET "sel[0]" LOC = L13;
+NET "w[3]" LOC = V4;
+NET "w[2]" LOC = D18;
+NET "w[1]" LOC = H13;
+NET "w[0]" LOC = G18;

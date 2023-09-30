@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Wed Aug 30 10:57:17 2023
+# Process ID: 4748
+# Log file: D:/IC lab/mux41/planAhead_run_2/planAhead.log
+# Journal file: D:/IC lab/mux41/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {D:/IC lab/mux41/pa.fromHdl.tcl}
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin V4 [get_ports {w[3]}]
+endgroup
+save_constraints

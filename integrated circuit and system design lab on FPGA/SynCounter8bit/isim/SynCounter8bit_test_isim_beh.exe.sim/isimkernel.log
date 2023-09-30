@@ -1,0 +1,28 @@
+Command line:
+   SynCounter8bit_test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  55318
+
+Tue Sep 12 11:00:24 2023
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 5149.91 Meg
+
+ Total Signals          : 18
+ Total Nets             : 31
+ Total Signal Drivers   : 9
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 13
+ Total Traceable Variables  : 21
+ Total Scalar Nets and Variables : 121
+
+ Total Simulation Time: 0.390625 sec
+
+ Current Memory Usage: 4678.05 Meg
+
+Tue Sep 12 11:16:57 2023
+

@@ -1,0 +1,395 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: chiaxung4f_dkled.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "chiaxung4f_dkled.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "chiaxung4f_dkled"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : chiaxung4f_dkled
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "chiaxung4f_dkled.v" in library work
+Module <chiaxung4f_dkled> compiled
+No errors in compilation
+Analysis of file <"chiaxung4f_dkled.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <chiaxung4f_dkled> in library <work> with parameters.
+	N = "00000000000000000000000000011010"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <chiaxung4f_dkled>.
+	N = 32'sb00000000000000000000000000011010
+WARNING:Xst:905 - "chiaxung4f_dkled.v" line 36: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <r_reg>
+Module <chiaxung4f_dkled> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <chiaxung4f_dkled>.
+    Related source file is "chiaxung4f_dkled.v".
+    Found 1-bit 4-to-1 multiplexer for signal <clkOut>.
+    Found 26-bit up counter for signal <r_reg>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 Multiplexer(s).
+Unit <chiaxung4f_dkled> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 26-bit up counter                                     : 1
+# Multiplexers                                         : 1
+ 1-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 26-bit up counter                                     : 1
+# Multiplexers                                         : 1
+ 1-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <chiaxung4f_dkled> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block chiaxung4f_dkled, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 26
+ Flip-Flops                                            : 26
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : chiaxung4f_dkled.ngr
+Top Level Output File Name         : chiaxung4f_dkled
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 5
+
+Cell Usage :
+# BELS                             : 82
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 25
+#      LUT3                        : 2
+#      MUXCY                       : 25
+#      MUXF5                       : 1
+#      VCC                         : 1
+#      XORCY                       : 26
+# FlipFlops/Latches                : 26
+#      FDC                         : 26
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 4
+#      IBUF                        : 3
+#      OBUF                        : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       15  out of   4656     0%  
+ Number of Slice Flip Flops:             26  out of   9312     0%  
+ Number of 4 input LUTs:                 28  out of   9312     0%  
+ Number of IOs:                           5
+ Number of bonded IOBs:                   5  out of    232     2%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 26    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 26    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 4.823ns (Maximum Frequency: 207.340MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 5.834ns
+   Maximum combinational path delay: 6.557ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.823ns (frequency: 207.340MHz)
+  Total number of paths / destination ports: 351 / 26
+-------------------------------------------------------------------------
+Delay:               4.823ns (Levels of Logic = 26)
+  Source:            r_reg_1 (FF)
+  Destination:       r_reg_25 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: r_reg_1 to r_reg_25
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.591   0.595  r_reg_1 (r_reg_1)
+     LUT1:I0->O            1   0.704   0.000  Mcount_r_reg_cy<1>_rt (Mcount_r_reg_cy<1>_rt)
+     MUXCY:S->O            1   0.464   0.000  Mcount_r_reg_cy<1> (Mcount_r_reg_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_r_reg_cy<2> (Mcount_r_reg_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_r_reg_cy<3> (Mcount_r_reg_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_r_reg_cy<4> (Mcount_r_reg_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_r_reg_cy<5> (Mcount_r_reg_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_r_reg_cy<6> (Mcount_r_reg_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_r_reg_cy<7> (Mcount_r_reg_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_r_reg_cy<8> (Mcount_r_reg_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_r_reg_cy<9> (Mcount_r_reg_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_r_reg_cy<10> (Mcount_r_reg_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_r_reg_cy<11> (Mcount_r_reg_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_r_reg_cy<12> (Mcount_r_reg_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_r_reg_cy<13> (Mcount_r_reg_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_r_reg_cy<14> (Mcount_r_reg_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_r_reg_cy<15> (Mcount_r_reg_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_r_reg_cy<16> (Mcount_r_reg_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_r_reg_cy<17> (Mcount_r_reg_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_r_reg_cy<18> (Mcount_r_reg_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_r_reg_cy<19> (Mcount_r_reg_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_r_reg_cy<20> (Mcount_r_reg_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_r_reg_cy<21> (Mcount_r_reg_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_r_reg_cy<22> (Mcount_r_reg_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_r_reg_cy<23> (Mcount_r_reg_cy<23>)
+     MUXCY:CI->O           0   0.059   0.000  Mcount_r_reg_cy<24> (Mcount_r_reg_cy<24>)
+     XORCY:CI->O           1   0.804   0.000  Mcount_r_reg_xor<25> (Result<25>)
+     FDC:D                     0.308          r_reg_25
+    ----------------------------------------
+    Total                      4.823ns (4.228ns logic, 0.595ns route)
+                                       (87.7% logic, 12.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 4 / 1
+-------------------------------------------------------------------------
+Offset:              5.834ns (Levels of Logic = 3)
+  Source:            r_reg_22 (FF)
+  Destination:       clkOut (PAD)
+  Source Clock:      clk rising
+
+  Data Path: r_reg_22 to clkOut
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.591   0.526  r_reg_22 (r_reg_22)
+     LUT3:I1->O            1   0.704   0.000  Mmux_clkOut_4 (Mmux_clkOut_4)
+     MUXF5:I0->O           1   0.321   0.420  Mmux_clkOut_2_f5 (clkOut_OBUF)
+     OBUF:I->O                 3.272          clkOut_OBUF (clkOut)
+    ----------------------------------------
+    Total                      5.834ns (4.888ns logic, 0.946ns route)
+                                       (83.8% logic, 16.2% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 3 / 1
+-------------------------------------------------------------------------
+Delay:               6.557ns (Levels of Logic = 4)
+  Source:            sel<0> (PAD)
+  Destination:       clkOut (PAD)
+
+  Data Path: sel<0> to clkOut
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.218   0.622  sel_0_IBUF (sel_0_IBUF)
+     LUT3:I0->O            1   0.704   0.000  Mmux_clkOut_3 (Mmux_clkOut_3)
+     MUXF5:I1->O           1   0.321   0.420  Mmux_clkOut_2_f5 (clkOut_OBUF)
+     OBUF:I->O                 3.272          clkOut_OBUF (clkOut)
+    ----------------------------------------
+    Total                      6.557ns (5.515ns logic, 1.042ns route)
+                                       (84.1% logic, 15.9% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.08 secs
+ 
+--> 
+
+Total memory usage is 4496780 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

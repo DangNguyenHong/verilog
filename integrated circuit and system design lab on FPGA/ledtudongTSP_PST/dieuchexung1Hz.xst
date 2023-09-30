@@ -1,0 +1,5 @@
+set -tmpdir "D:/IC lab/ledtudongTSP_PST/xst/projnav.tmp"
+set -xsthdpdir "D:/IC lab/ledtudongTSP_PST/xst"
+elaborate
+-ifn dieuchexung1Hz.prj
+-ifmt mixed

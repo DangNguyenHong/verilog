@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "D:/IC lab/Control8Led_sangtatdan_1sw/generalmodule.xst" -ofn "D:/IC lab/Control8Led_sangtatdan_1sw/generalmodule.syr" 
+xst -intstyle ise -ifn "D:/IC lab/Control8Led_sangtatdan_1sw/generalmodule.xst" -ofn "D:/IC lab/Control8Led_sangtatdan_1sw/generalmodule.syr" 
+xst -intstyle ise -ifn "D:/IC lab/Control8Led_sangtatdan_1sw/generalmodule.xst" -ofn "D:/IC lab/Control8Led_sangtatdan_1sw/generalmodule.syr" 
+xst -intstyle ise -ifn "D:/IC lab/Control8Led_sangtatdan_1sw/generalmodule.xst" -ofn "D:/IC lab/Control8Led_sangtatdan_1sw/generalmodule.syr" 

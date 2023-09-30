@@ -1,0 +1,28 @@
+Command line:
+   chiaxung4f_dkled_test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  56447
+
+Tue Sep 12 21:30:54 2023
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 5149.94 Meg
+
+ Total Signals          : 18
+ Total Nets             : 44
+ Total Signal Drivers   : 10
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 15
+ Total Traceable Variables  : 24
+ Total Scalar Nets and Variables : 187
+
+ Total Simulation Time: 37.7969 sec
+
+ Current Memory Usage: 5464.51 Meg
+
+Tue Sep 12 21:31:46 2023
+
