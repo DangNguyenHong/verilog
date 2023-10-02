@@ -1,0 +1,6 @@
+verilog work "ADD3.v"
+verilog work "../TM1638/TM1638.v"
+verilog work "UPDOWNCOUNTER.v"
+verilog work "HEX_BCD.v"
+verilog work "CHIAXUNG.v"
+verilog work "NGUYENHONGDANG.v"
