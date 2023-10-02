@@ -23,7 +23,7 @@ input [7:0] hex,
 output wire [3:0] ones,
 output wire [3:0] tens,
 output wire [3:0] hundreds
-    );
+);
 wire [3:0] c1,c2,c3,c4,c5,c6,c7;
 wire [3:0] d1,d2,d3,d4,d5,d6,d7;
 assign d1 = {1'b0,hex[7:5]};

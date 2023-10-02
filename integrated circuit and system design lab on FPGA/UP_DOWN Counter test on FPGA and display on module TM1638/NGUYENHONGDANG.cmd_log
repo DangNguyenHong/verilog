@@ -44,3 +44,9 @@ map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o NGUYENH
 par -w -intstyle ise -ol high -t 1 NGUYENHONGDANG_map.ncd NGUYENHONGDANG.ncd NGUYENHONGDANG.pcf 
 trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml NGUYENHONGDANG.twx NGUYENHONGDANG.ncd -o NGUYENHONGDANG.twr NGUYENHONGDANG.pcf -ucf NGUYENHONGDANG.ucf 
 bitgen -intstyle ise -f NGUYENHONGDANG.ut NGUYENHONGDANG.ncd 
+xst -intstyle ise -ifn "D:/IC lab/NGUYENHONGDANG_20119127_test2/NGUYENHONGDANG.xst" -ofn "D:/IC lab/NGUYENHONGDANG_20119127_test2/NGUYENHONGDANG.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc NGUYENHONGDANG.ucf -p xc3s500e-fg320-4 "NGUYENHONGDANG.ngc" NGUYENHONGDANG.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o NGUYENHONGDANG_map.ncd NGUYENHONGDANG.ngd NGUYENHONGDANG.pcf 
+par -w -intstyle ise -ol high -t 1 NGUYENHONGDANG_map.ncd NGUYENHONGDANG.ncd NGUYENHONGDANG.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml NGUYENHONGDANG.twx NGUYENHONGDANG.ncd -o NGUYENHONGDANG.twr NGUYENHONGDANG.pcf -ucf NGUYENHONGDANG.ucf 
+bitgen -intstyle ise -f NGUYENHONGDANG.ut NGUYENHONGDANG.ncd 

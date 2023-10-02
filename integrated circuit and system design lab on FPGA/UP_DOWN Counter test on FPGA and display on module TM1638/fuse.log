@@ -17,4 +17,4 @@ WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation exec
 Compiled 3 Verilog Units
 Built simulation executable D:/IC lab/NGUYENHONGDANG_20119127_test2/COUNTER_test_isim_beh.exe
 Fuse Memory Usage: 27912 KB
-Fuse CPU Usage: 530 ms
+Fuse CPU Usage: 546 ms

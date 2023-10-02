@@ -45,11 +45,11 @@ Clock to Setup on destination clock clki
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clki           |    5.063|         |         |         |
+clki           |    5.399|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Mon Oct 02 19:22:33 2023 
+Analysis completed Mon Oct 02 21:22:28 2023 
 --------------------------------------------------------------------------------
 
 Trace Settings:

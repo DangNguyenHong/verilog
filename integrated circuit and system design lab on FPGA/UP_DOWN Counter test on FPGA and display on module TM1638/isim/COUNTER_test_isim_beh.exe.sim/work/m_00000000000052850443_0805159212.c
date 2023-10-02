@@ -24,7 +24,7 @@
 static const char *ng0 = "D:/IC lab/NGUYENHONGDANG_20119127_test2/UPDOWNCOUNTER.v";
 static int ng1[] = {0, 0};
 static int ng2[] = {1, 0};
-static int ng3[] = {999, 0};
+static int ng3[] = {255, 0};
 
 
 
@@ -38,7 +38,7 @@ LAB0:    xsi_set_current_line(29, ng0);
 LAB2:    xsi_set_current_line(30, ng0);
     t1 = ((char*)((ng1)));
     t2 = (t0 + 2248);
-    xsi_vlogvar_assign_value(t2, t1, 0, 0, 8);
+    xsi_vlogvar_assign_value(t2, t1, 0, 0, 10);
 
 LAB1:    return;
 }
@@ -231,9 +231,9 @@ LAB33:    xsi_set_current_line(47, ng0);
     t4 = *((char **)t3);
     t5 = ((char*)((ng2)));
     memset(t6, 0, 8);
-    xsi_vlog_unsigned_minus(t6, 32, t4, 8, t5, 32);
+    xsi_vlog_unsigned_minus(t6, 32, t4, 10, t5, 32);
     t7 = (t0 + 2248);
-    xsi_vlogvar_assign_value(t7, t6, 0, 0, 8);
+    xsi_vlogvar_assign_value(t7, t6, 0, 0, 10);
 
 LAB34:
 LAB18:
@@ -249,7 +249,7 @@ LAB9:    xsi_set_current_line(34, ng0);
     t29 = (t28 + 56U);
     t30 = *((char **)t29);
     t31 = (t0 + 2248);
-    xsi_vlogvar_assign_value(t31, t30, 0, 0, 8);
+    xsi_vlogvar_assign_value(t31, t30, 0, 0, 10);
     goto LAB11;
 
 LAB14:    t7 = (t6 + 4);
@@ -302,9 +302,9 @@ LAB25:    xsi_set_current_line(40, ng0);
     t4 = *((char **)t3);
     t5 = ((char*)((ng2)));
     memset(t6, 0, 8);
-    xsi_vlog_unsigned_add(t6, 32, t4, 8, t5, 32);
+    xsi_vlog_unsigned_add(t6, 32, t4, 10, t5, 32);
     t7 = (t0 + 2248);
-    xsi_vlogvar_assign_value(t7, t6, 0, 0, 8);
+    xsi_vlogvar_assign_value(t7, t6, 0, 0, 10);
 
 LAB26:    goto LAB18;
 
@@ -316,7 +316,7 @@ LAB22:    t45 = (t32 + 4);
 LAB24:    xsi_set_current_line(38, ng0);
     t52 = ((char*)((ng1)));
     t53 = (t0 + 2248);
-    xsi_vlogvar_assign_value(t53, t52, 0, 0, 8);
+    xsi_vlogvar_assign_value(t53, t52, 0, 0, 10);
     goto LAB26;
 
 LAB30:    t21 = (t6 + 4);
@@ -327,7 +327,7 @@ LAB30:    t21 = (t6 + 4);
 LAB32:    xsi_set_current_line(45, ng0);
     t28 = ((char*)((ng3)));
     t29 = (t0 + 2248);
-    xsi_vlogvar_assign_value(t29, t28, 0, 0, 8);
+    xsi_vlogvar_assign_value(t29, t28, 0, 0, 10);
     goto LAB34;
 
 }

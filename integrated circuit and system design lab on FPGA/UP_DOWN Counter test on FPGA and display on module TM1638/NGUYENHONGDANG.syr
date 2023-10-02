@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.26 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.26 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
  
 --> Reading design: NGUYENHONGDANG.prj
 
@@ -191,7 +191,7 @@ Synthesizing Unit <UPDOWNCOUNTER>.
     Related source file is "UPDOWNCOUNTER.v".
     Found 8-bit register for signal <led567>.
     Found 8-bit register for signal <led012>.
-    Found 8-bit updown counter for signal <cnt>.
+    Found 10-bit updown counter for signal <cnt>.
     Summary:
 	inferred   1 Counter(s).
 	inferred  16 D-type flip-flop(s).
@@ -270,8 +270,8 @@ Macro Statistics
 # Adders/Subtractors                                   : 1
  32-bit adder                                          : 1
 # Counters                                             : 3
+ 10-bit updown counter                                 : 1
  32-bit up counter                                     : 2
- 8-bit updown counter                                  : 1
 # Registers                                            : 12
  1-bit register                                        : 5
  128-bit register                                      : 1
@@ -312,8 +312,8 @@ Macro Statistics
 # Adders/Subtractors                                   : 1
  32-bit adder                                          : 1
 # Counters                                             : 3
+ 10-bit updown counter                                 : 1
  32-bit up counter                                     : 2
- 8-bit updown counter                                  : 1
 # Registers                                            : 202
  Flip-Flops                                            : 202
 # Comparators                                          : 16
@@ -359,8 +359,8 @@ Unit <NGUYENHONGDANG> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 263
- Flip-Flops                                            : 263
+# Registers                                            : 265
+ Flip-Flops                                            : 265
 # Shift Registers                                      : 1
  4-bit shift register                                  : 1
 
@@ -391,27 +391,27 @@ Design Statistics
 # IOs                              : 7
 
 Cell Usage :
-# BELS                             : 806
+# BELS                             : 818
 #      GND                         : 1
 #      INV                         : 19
 #      LUT1                        : 82
-#      LUT2                        : 108
+#      LUT2                        : 110
 #      LUT2_D                      : 2
 #      LUT2_L                      : 1
-#      LUT3                        : 59
+#      LUT3                        : 53
 #      LUT3_L                      : 1
-#      LUT4                        : 192
+#      LUT4                        : 205
 #      LUT4_D                      : 6
 #      LUT4_L                      : 2
-#      MUXCY                       : 217
-#      MUXF5                       : 11
+#      MUXCY                       : 219
+#      MUXF5                       : 10
 #      VCC                         : 1
-#      XORCY                       : 104
-# FlipFlops/Latches                : 268
+#      XORCY                       : 106
+# FlipFlops/Latches                : 270
 #      FD                          : 32
-#      FDE                         : 132
+#      FDE                         : 124
 #      FDR                         : 80
-#      FDRE                        : 16
+#      FDRE                        : 26
 #      FDSE                        : 8
 # Shift Registers                  : 1
 #      SRL16E                      : 1
@@ -428,10 +428,10 @@ Device utilization summary:
 
 Selected Device : 3s500efg320-4 
 
- Number of Slices:                      252  out of   4656     5%  
- Number of Slice Flip Flops:            268  out of   9312     2%  
- Number of 4 input LUTs:                473  out of   9312     5%  
-    Number used as logic:               472
+ Number of Slices:                      256  out of   4656     5%  
+ Number of Slice Flip Flops:            270  out of   9312     2%  
+ Number of 4 input LUTs:                482  out of   9312     5%  
+    Number used as logic:               481
     Number used as Shift registers:       1
  Number of IOs:                           7
  Number of bonded IOBs:                   7  out of    232     3%  
@@ -459,7 +459,7 @@ Clock Information:
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
 clki                               | BUFGP                  | 66    |
-chiaxung/clk_1hz1                  | BUFG                   | 24    |
+chiaxung/clk_1hz1                  | BUFG                   | 26    |
 chiaxung/clk_khz1                  | BUFG                   | 179   |
 -----------------------------------+------------------------+-------+
 
@@ -472,7 +472,7 @@ Timing Summary:
 Speed Grade: -4
 
    Minimum period: 11.262ns (Maximum Frequency: 88.794MHz)
-   Minimum input arrival time before clock: 6.112ns
+   Minimum input arrival time before clock: 6.331ns
    Maximum output required time after clock: 4.532ns
    Maximum combinational path delay: No path found
 
@@ -512,20 +512,20 @@ Delay:               5.240ns (Levels of Logic = 9)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'chiaxung/clk_1hz1'
-  Clock period: 5.286ns (frequency: 189.179MHz)
-  Total number of paths / destination ports: 144 / 24
+  Clock period: 5.450ns (frequency: 183.486MHz)
+  Total number of paths / destination ports: 316 / 36
 -------------------------------------------------------------------------
-Delay:               5.286ns (Levels of Logic = 10)
+Delay:               5.450ns (Levels of Logic = 12)
   Source:            counter/cnt_0 (FF)
-  Destination:       counter/cnt_7 (FF)
+  Destination:       counter/cnt_9 (FF)
   Source Clock:      chiaxung/clk_1hz1 rising
   Destination Clock: chiaxung/clk_1hz1 rising
 
-  Data Path: counter/cnt_0 to counter/cnt_7
+  Data Path: counter/cnt_0 to counter/cnt_9
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              4   0.591   0.762  counter/cnt_0 (counter/cnt_0)
+     FDRE:C->Q             5   0.591   0.808  counter/cnt_0 (counter/cnt_0)
      LUT2:I0->O            1   0.704   0.000  counter/Mcount_cnt_lut<0> (counter/Mcount_cnt_lut<0>)
      MUXCY:S->O            1   0.464   0.000  counter/Mcount_cnt_cy<0> (counter/Mcount_cnt_cy<0>)
      MUXCY:CI->O           1   0.059   0.000  counter/Mcount_cnt_cy<1> (counter/Mcount_cnt_cy<1>)
@@ -533,12 +533,14 @@ Delay:               5.286ns (Levels of Logic = 10)
      MUXCY:CI->O           1   0.059   0.000  counter/Mcount_cnt_cy<3> (counter/Mcount_cnt_cy<3>)
      MUXCY:CI->O           1   0.059   0.000  counter/Mcount_cnt_cy<4> (counter/Mcount_cnt_cy<4>)
      MUXCY:CI->O           1   0.059   0.000  counter/Mcount_cnt_cy<5> (counter/Mcount_cnt_cy<5>)
-     MUXCY:CI->O           0   0.059   0.000  counter/Mcount_cnt_cy<6> (counter/Mcount_cnt_cy<6>)
-     XORCY:CI->O           1   0.804   0.595  counter/Mcount_cnt_xor<7> (counter/Result<7>)
-     LUT3:I0->O            1   0.704   0.000  counter/Mcount_cnt_eqn_71 (counter/Mcount_cnt_eqn_7)
-     FDE:D                     0.308          counter/cnt_7
+     MUXCY:CI->O           1   0.059   0.000  counter/Mcount_cnt_cy<6> (counter/Mcount_cnt_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  counter/Mcount_cnt_cy<7> (counter/Mcount_cnt_cy<7>)
+     MUXCY:CI->O           0   0.059   0.000  counter/Mcount_cnt_cy<8> (counter/Mcount_cnt_cy<8>)
+     XORCY:CI->O           1   0.804   0.595  counter/Mcount_cnt_xor<9> (counter/Result<9>)
+     LUT4:I0->O            1   0.704   0.000  counter/Mcount_cnt_eqn_91 (counter/Mcount_cnt_eqn_9)
+     FDRE:D                    0.308          counter/cnt_9
     ----------------------------------------
-    Total                      5.286ns (3.929ns logic, 1.357ns route)
+    Total                      5.450ns (4.047ns logic, 1.403ns route)
                                        (74.3% logic, 25.7% route)
 
 =========================================================================
@@ -604,18 +606,18 @@ Delay:               11.262ns (Levels of Logic = 40)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'chiaxung/clk_1hz1'
-  Total number of paths / destination ports: 76 / 32
+  Total number of paths / destination ports: 121 / 46
 -------------------------------------------------------------------------
-Offset:              6.112ns (Levels of Logic = 11)
+Offset:              6.331ns (Levels of Logic = 13)
   Source:            sw0 (PAD)
-  Destination:       counter/cnt_7 (FF)
+  Destination:       counter/cnt_9 (FF)
   Destination Clock: chiaxung/clk_1hz1 rising
 
-  Data Path: sw0 to counter/cnt_7
+  Data Path: sw0 to counter/cnt_9
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            10   1.218   0.961  sw0_IBUF (counter/sw0_inv_inv1)
+     IBUF:I->O            13   1.218   1.062  sw0_IBUF (counter/sw0_inv_inv1)
      LUT2:I1->O            1   0.704   0.000  counter/Mcount_cnt_lut<0> (counter/Mcount_cnt_lut<0>)
      MUXCY:S->O            1   0.464   0.000  counter/Mcount_cnt_cy<0> (counter/Mcount_cnt_cy<0>)
      MUXCY:CI->O           1   0.059   0.000  counter/Mcount_cnt_cy<1> (counter/Mcount_cnt_cy<1>)
@@ -623,13 +625,15 @@ Offset:              6.112ns (Levels of Logic = 11)
      MUXCY:CI->O           1   0.059   0.000  counter/Mcount_cnt_cy<3> (counter/Mcount_cnt_cy<3>)
      MUXCY:CI->O           1   0.059   0.000  counter/Mcount_cnt_cy<4> (counter/Mcount_cnt_cy<4>)
      MUXCY:CI->O           1   0.059   0.000  counter/Mcount_cnt_cy<5> (counter/Mcount_cnt_cy<5>)
-     MUXCY:CI->O           0   0.059   0.000  counter/Mcount_cnt_cy<6> (counter/Mcount_cnt_cy<6>)
-     XORCY:CI->O           1   0.804   0.595  counter/Mcount_cnt_xor<7> (counter/Result<7>)
-     LUT3:I0->O            1   0.704   0.000  counter/Mcount_cnt_eqn_71 (counter/Mcount_cnt_eqn_7)
-     FDE:D                     0.308          counter/cnt_7
+     MUXCY:CI->O           1   0.059   0.000  counter/Mcount_cnt_cy<6> (counter/Mcount_cnt_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  counter/Mcount_cnt_cy<7> (counter/Mcount_cnt_cy<7>)
+     MUXCY:CI->O           0   0.059   0.000  counter/Mcount_cnt_cy<8> (counter/Mcount_cnt_cy<8>)
+     XORCY:CI->O           1   0.804   0.595  counter/Mcount_cnt_xor<9> (counter/Result<9>)
+     LUT4:I0->O            1   0.704   0.000  counter/Mcount_cnt_eqn_91 (counter/Mcount_cnt_eqn_9)
+     FDRE:D                    0.308          counter/cnt_9
     ----------------------------------------
-    Total                      6.112ns (4.556ns logic, 1.556ns route)
-                                       (74.5% logic, 25.5% route)
+    Total                      6.331ns (4.674ns logic, 1.657ns route)
+                                       (73.8% logic, 26.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'chiaxung/clk_khz1'
@@ -653,12 +657,12 @@ Offset:              4.532ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 16.00 secs
-Total CPU time to Xst completion: 15.35 secs
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 14.02 secs
  
 --> 
 
-Total memory usage is 4513560 kilobytes
+Total memory usage is 4513536 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   25 (   0 filtered)

@@ -24,7 +24,7 @@ input wire sw0,sw1,sw2,
 output reg [7:0]led012,
 output reg [7:0]led567
     );
-reg [7:0]cnt;	 
+reg [9:0]cnt;	 
 initial
 begin
 cnt=0;
@@ -34,7 +34,7 @@ if(sw1==1)
 	cnt = cnt;
 	else if(sw0==0)
 			begin
-				if(cnt==999) 
+				if(cnt==255) 
 				cnt=0;
 				else
 				cnt = cnt +1;
@@ -42,7 +42,7 @@ if(sw1==1)
 			else 
 				begin
 				if(cnt==0)
-				cnt=999;
+				cnt=255;
 				else
 				cnt = cnt-1;
 				end
