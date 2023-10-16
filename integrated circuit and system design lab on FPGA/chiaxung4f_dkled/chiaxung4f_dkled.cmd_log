@@ -1,0 +1,13 @@
+xst -intstyle ise -ifn "D:/IC lab/chiaxung4f_dkled/chiaxung4f_dkled.xst" -ofn "D:/IC lab/chiaxung4f_dkled/chiaxung4f_dkled.syr" 
+xst -intstyle ise -ifn "D:/IC lab/chiaxung4f_dkled/chiaxung4f_dkled.xst" -ofn "D:/IC lab/chiaxung4f_dkled/chiaxung4f_dkled.syr" 
+xst -intstyle ise -ifn "D:/IC lab/chiaxung4f_dkled/chiaxung4f_dkled.xst" -ofn "D:/IC lab/chiaxung4f_dkled/chiaxung4f_dkled.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc chiaxung4f_dkled.ucf -p xc3s500e-fg320-4 "chiaxung4f_dkled.ngc" chiaxung4f_dkled.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o chiaxung4f_dkled_map.ncd chiaxung4f_dkled.ngd chiaxung4f_dkled.pcf 
+par -w -intstyle ise -ol high -t 1 chiaxung4f_dkled_map.ncd chiaxung4f_dkled.ncd chiaxung4f_dkled.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml chiaxung4f_dkled.twx chiaxung4f_dkled.ncd -o chiaxung4f_dkled.twr chiaxung4f_dkled.pcf -ucf chiaxung4f_dkled.ucf 
+bitgen -intstyle ise -f chiaxung4f_dkled.ut chiaxung4f_dkled.ncd 
+xst -intstyle ise -ifn "D:/IC lab/chiaxung4f_dkled/chiaxung4f_dkled.xst" -ofn "D:/IC lab/chiaxung4f_dkled/chiaxung4f_dkled.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc chiaxung4f_dkled.ucf -p xc3s500e-fg320-4 "chiaxung4f_dkled.ngc" chiaxung4f_dkled.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o chiaxung4f_dkled_map.ncd chiaxung4f_dkled.ngd chiaxung4f_dkled.pcf 
+par -w -intstyle ise -ol high -t 1 chiaxung4f_dkled_map.ncd chiaxung4f_dkled.ncd chiaxung4f_dkled.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml chiaxung4f_dkled.twx chiaxung4f_dkled.ncd -o chiaxung4f_dkled.twr chiaxung4f_dkled.pcf -ucf chiaxung4f_dkled.ucf 

@@ -1,0 +1,6 @@
+verilog work "add3.v"
+verilog work "LCDModule.v"
+verilog work "hex_bcd.v"
+verilog work "counter.v"
+verilog work "clock.v"
+verilog work "Top.v"

@@ -1,0 +1,4 @@
+verilog work "SHIFT_CODE.v"
+verilog work "LCDModule.v"
+verilog work "CHIAXUNG.v"
+verilog work "Top.v"

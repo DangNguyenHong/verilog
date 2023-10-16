@@ -1,0 +1,37 @@
+xst -intstyle ise -ifn "D:/IC lab/NGUYENHONGDANG/NGUYENHONGDANG_finaltest.xst" -ofn "D:/IC lab/NGUYENHONGDANG/NGUYENHONGDANG_finaltest.syr" 
+xst -intstyle ise -ifn "D:/IC lab/NGUYENHONGDANG/NGUYENHONGDANG_finaltest.xst" -ofn "D:/IC lab/NGUYENHONGDANG/NGUYENHONGDANG_finaltest.syr" 
+xst -intstyle ise -ifn "D:/IC lab/NGUYENHONGDANG/NGUYENHONGDANG_finaltest.xst" -ofn "D:/IC lab/NGUYENHONGDANG/NGUYENHONGDANG_finaltest.syr" 
+xst -intstyle ise -ifn "D:/IC lab/NGUYENHONGDANG/NGUYENHONGDANG_finaltest.xst" -ofn "D:/IC lab/NGUYENHONGDANG/NGUYENHONGDANG_finaltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc NGUYENHONGDANG_finaltest.ucf -p xc3s500e-fg320-4 "NGUYENHONGDANG_finaltest.ngc" NGUYENHONGDANG_finaltest.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o NGUYENHONGDANG_finaltest_map.ncd NGUYENHONGDANG_finaltest.ngd NGUYENHONGDANG_finaltest.pcf 
+par -w -intstyle ise -ol high -t 1 NGUYENHONGDANG_finaltest_map.ncd NGUYENHONGDANG_finaltest.ncd NGUYENHONGDANG_finaltest.pcf 
+xst -intstyle ise -ifn "D:/IC lab/NGUYENHONGDANG/NGUYENHONGDANG_finaltest.xst" -ofn "D:/IC lab/NGUYENHONGDANG/NGUYENHONGDANG_finaltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc NGUYENHONGDANG_finaltest.ucf -p xc3s500e-fg320-4 "NGUYENHONGDANG_finaltest.ngc" NGUYENHONGDANG_finaltest.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o NGUYENHONGDANG_finaltest_map.ncd NGUYENHONGDANG_finaltest.ngd NGUYENHONGDANG_finaltest.pcf 
+par -w -intstyle ise -ol high -t 1 NGUYENHONGDANG_finaltest_map.ncd NGUYENHONGDANG_finaltest.ncd NGUYENHONGDANG_finaltest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml NGUYENHONGDANG_finaltest.twx NGUYENHONGDANG_finaltest.ncd -o NGUYENHONGDANG_finaltest.twr NGUYENHONGDANG_finaltest.pcf -ucf NGUYENHONGDANG_finaltest.ucf 
+bitgen -intstyle ise -f NGUYENHONGDANG_finaltest.ut NGUYENHONGDANG_finaltest.ncd 
+xst -intstyle ise -ifn "D:/IC lab/NGUYENHONGDANG/NGUYENHONGDANG_finaltest.xst" -ofn "D:/IC lab/NGUYENHONGDANG/NGUYENHONGDANG_finaltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc NGUYENHONGDANG_finaltest.ucf -p xc3s500e-fg320-4 "NGUYENHONGDANG_finaltest.ngc" NGUYENHONGDANG_finaltest.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o NGUYENHONGDANG_finaltest_map.ncd NGUYENHONGDANG_finaltest.ngd NGUYENHONGDANG_finaltest.pcf 
+par -w -intstyle ise -ol high -t 1 NGUYENHONGDANG_finaltest_map.ncd NGUYENHONGDANG_finaltest.ncd NGUYENHONGDANG_finaltest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml NGUYENHONGDANG_finaltest.twx NGUYENHONGDANG_finaltest.ncd -o NGUYENHONGDANG_finaltest.twr NGUYENHONGDANG_finaltest.pcf -ucf NGUYENHONGDANG_finaltest.ucf 
+bitgen -intstyle ise -f NGUYENHONGDANG_finaltest.ut NGUYENHONGDANG_finaltest.ncd 
+xst -intstyle ise -ifn "D:/IC lab/NGUYENHONGDANG/NGUYENHONGDANG_finaltest.xst" -ofn "D:/IC lab/NGUYENHONGDANG/NGUYENHONGDANG_finaltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc NGUYENHONGDANG_finaltest.ucf -p xc3s500e-fg320-4 "NGUYENHONGDANG_finaltest.ngc" NGUYENHONGDANG_finaltest.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o NGUYENHONGDANG_finaltest_map.ncd NGUYENHONGDANG_finaltest.ngd NGUYENHONGDANG_finaltest.pcf 
+par -w -intstyle ise -ol high -t 1 NGUYENHONGDANG_finaltest_map.ncd NGUYENHONGDANG_finaltest.ncd NGUYENHONGDANG_finaltest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml NGUYENHONGDANG_finaltest.twx NGUYENHONGDANG_finaltest.ncd -o NGUYENHONGDANG_finaltest.twr NGUYENHONGDANG_finaltest.pcf -ucf NGUYENHONGDANG_finaltest.ucf 
+bitgen -intstyle ise -f NGUYENHONGDANG_finaltest.ut NGUYENHONGDANG_finaltest.ncd 
+xst -intstyle ise -ifn "D:/IC lab/NGUYENHONGDANG/NGUYENHONGDANG_finaltest.xst" -ofn "D:/IC lab/NGUYENHONGDANG/NGUYENHONGDANG_finaltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc NGUYENHONGDANG_finaltest.ucf -p xc3s500e-fg320-4 "NGUYENHONGDANG_finaltest.ngc" NGUYENHONGDANG_finaltest.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o NGUYENHONGDANG_finaltest_map.ncd NGUYENHONGDANG_finaltest.ngd NGUYENHONGDANG_finaltest.pcf 
+par -w -intstyle ise -ol high -t 1 NGUYENHONGDANG_finaltest_map.ncd NGUYENHONGDANG_finaltest.ncd NGUYENHONGDANG_finaltest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml NGUYENHONGDANG_finaltest.twx NGUYENHONGDANG_finaltest.ncd -o NGUYENHONGDANG_finaltest.twr NGUYENHONGDANG_finaltest.pcf -ucf NGUYENHONGDANG_finaltest.ucf 
+bitgen -intstyle ise -f NGUYENHONGDANG_finaltest.ut NGUYENHONGDANG_finaltest.ncd 
+xst -intstyle ise -ifn "D:/IC lab/NGUYENHONGDANG/NGUYENHONGDANG_finaltest.xst" -ofn "D:/IC lab/NGUYENHONGDANG/NGUYENHONGDANG_finaltest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc NGUYENHONGDANG_finaltest.ucf -p xc3s500e-fg320-4 "NGUYENHONGDANG_finaltest.ngc" NGUYENHONGDANG_finaltest.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o NGUYENHONGDANG_finaltest_map.ncd NGUYENHONGDANG_finaltest.ngd NGUYENHONGDANG_finaltest.pcf 
+par -w -intstyle ise -ol high -t 1 NGUYENHONGDANG_finaltest_map.ncd NGUYENHONGDANG_finaltest.ncd NGUYENHONGDANG_finaltest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml NGUYENHONGDANG_finaltest.twx NGUYENHONGDANG_finaltest.ncd -o NGUYENHONGDANG_finaltest.twr NGUYENHONGDANG_finaltest.pcf -ucf NGUYENHONGDANG_finaltest.ucf 
+bitgen -intstyle ise -f NGUYENHONGDANG_finaltest.ut NGUYENHONGDANG_finaltest.ncd 

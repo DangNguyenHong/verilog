@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "D:/IC lab/decoder38/decoder38.xst" -ofn "D:/IC lab/decoder38/decoder38.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim decoder38.ngc decoder38_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc decoder38.ucf -p xc3s500e-fg320-4 "decoder38.ngc" decoder38.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o decoder38_map.ncd decoder38.ngd decoder38.pcf 
+par -w -intstyle ise -ol high -t 1 decoder38_map.ncd decoder38.ncd decoder38.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml decoder38.twx decoder38.ncd -o decoder38.twr decoder38.pcf -ucf decoder38.ucf 
+bitgen -intstyle ise -f decoder38.ut decoder38.ncd 
+bitgen -intstyle ise -f decoder38.ut decoder38.ncd 

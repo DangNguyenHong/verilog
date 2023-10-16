@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/IC lab/SynCounter8bit/SynCounter8bit.xst" -ofn "D:/IC lab/SynCounter8bit/SynCounter8bit.syr" 
+xst -intstyle ise -ifn "D:/IC lab/SynCounter8bit/SynCounter8bit.xst" -ofn "D:/IC lab/SynCounter8bit/SynCounter8bit.syr" 

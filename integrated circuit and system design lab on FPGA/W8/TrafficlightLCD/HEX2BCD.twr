@@ -1,0 +1,117 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+-n 3 -fastpaths -xml HEX2BCD.twx HEX2BCD.ncd -o HEX2BCD.twr HEX2BCD.pcf
+
+Design file:              HEX2BCD.ncd
+Physical constraint file: HEX2BCD.pcf
+Device,package,speed:     xc3s500e,fg320,-4 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+A<0>           |ONES<0>        |    5.047|
+A<1>           |ONES<1>        |    6.767|
+A<1>           |ONES<2>        |    7.189|
+A<1>           |ONES<3>        |    6.977|
+A<1>           |TENS<0>        |    6.654|
+A<2>           |HUNDREDS<0>    |    7.842|
+A<2>           |ONES<1>        |    8.197|
+A<2>           |ONES<2>        |    8.352|
+A<2>           |ONES<3>        |    8.369|
+A<2>           |TENS<0>        |    7.817|
+A<2>           |TENS<1>        |    8.323|
+A<2>           |TENS<2>        |    7.920|
+A<2>           |TENS<3>        |    7.954|
+A<3>           |HUNDREDS<0>    |    8.541|
+A<3>           |HUNDREDS<1>    |    7.180|
+A<3>           |ONES<1>        |    9.495|
+A<3>           |ONES<2>        |    9.839|
+A<3>           |ONES<3>        |    9.698|
+A<3>           |TENS<0>        |    9.304|
+A<3>           |TENS<1>        |    9.022|
+A<3>           |TENS<2>        |    8.619|
+A<3>           |TENS<3>        |    8.653|
+A<4>           |HUNDREDS<0>    |   10.148|
+A<4>           |HUNDREDS<1>    |    8.429|
+A<4>           |ONES<1>        |   10.704|
+A<4>           |ONES<2>        |   11.048|
+A<4>           |ONES<3>        |   10.907|
+A<4>           |TENS<0>        |   10.513|
+A<4>           |TENS<1>        |   10.629|
+A<4>           |TENS<2>        |   10.226|
+A<4>           |TENS<3>        |   10.260|
+A<5>           |HUNDREDS<0>    |   10.315|
+A<5>           |HUNDREDS<1>    |    8.432|
+A<5>           |ONES<1>        |   10.707|
+A<5>           |ONES<2>        |   11.051|
+A<5>           |ONES<3>        |   10.910|
+A<5>           |TENS<0>        |   10.516|
+A<5>           |TENS<1>        |   10.796|
+A<5>           |TENS<2>        |   10.393|
+A<5>           |TENS<3>        |   10.427|
+A<6>           |HUNDREDS<0>    |   10.311|
+A<6>           |HUNDREDS<1>    |    8.646|
+A<6>           |ONES<1>        |   10.896|
+A<6>           |ONES<2>        |   11.240|
+A<6>           |ONES<3>        |   11.099|
+A<6>           |TENS<0>        |   10.705|
+A<6>           |TENS<1>        |   10.792|
+A<6>           |TENS<2>        |   10.389|
+A<6>           |TENS<3>        |   10.423|
+A<7>           |HUNDREDS<0>    |   10.272|
+A<7>           |HUNDREDS<1>    |    8.596|
+A<7>           |ONES<1>        |   10.871|
+A<7>           |ONES<2>        |   11.215|
+A<7>           |ONES<3>        |   11.074|
+A<7>           |TENS<0>        |   10.680|
+A<7>           |TENS<1>        |   10.753|
+A<7>           |TENS<2>        |   10.350|
+A<7>           |TENS<3>        |   10.384|
+---------------+---------------+---------+
+
+
+Analysis completed Sat Oct 07 10:49:35 2023 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4509 MB
+
+
+

@@ -1,0 +1,40 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Tue Oct 10 20:47:56 2023
+# Process ID: 12260
+# Log file: G:/HK7/IClab/W8/Traffic/planAhead_run_2/planAhead.log
+# Journal file: G:/HK7/IClab/W8/Traffic/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source G:/HK7/IClab/W8/Traffic/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin L13 [get_ports rs]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list rs]]
+startgroup
+set_property package_pin F9 [get_ports D1]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list D1]]
+startgroup
+set_property package_pin E11 [get_ports D2]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list D2]]
+startgroup
+set_property package_pin E9 [get_ports V1]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list V1]]
+startgroup
+set_property package_pin E12 [get_ports V2]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list V2]]
+startgroup
+set_property package_pin D11 [get_ports X1]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list X1]]
+startgroup
+set_property package_pin F12 [get_ports X2]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list X2]]
+save_constraints

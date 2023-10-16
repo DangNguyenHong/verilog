@@ -1,0 +1,2 @@
+vhdtdtfi -lib work {D:/IC lab/STUDENTCODE_SHIFT/TM1638.v} -lang verilog -prj STUDENTCODE_SHIFT -o TM1638.spl -module TM1638 -template D:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e TM1638.spl {D:/IC lab/STUDENTCODE_SHIFT/TM1638.sym} 

@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Wed Aug 30 09:36:22 2023
+# Process ID: 9652
+# Log file: D:/IC lab/demux18/planAhead_run_3/planAhead.log
+# Journal file: D:/IC lab/demux18/planAhead_run_3/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {D:/IC lab/demux18/pa.fromHdl.tcl}
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin N17 [get_ports w]
+endgroup
+set_property is_loc_fixed false [get_ports [list  w]]
+set_property is_loc_fixed true [get_ports [list  w]]
+set_property is_loc_fixed false [get_ports [list  w]]
+save_constraints
+set_property is_loc_fixed true [get_ports [list  w]]
+save_constraints

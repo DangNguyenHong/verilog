@@ -1,0 +1,5 @@
+set -tmpdir "D:/IC lab/W8/TrafficlightLCD/xst/projnav.tmp"
+set -xsthdpdir "D:/IC lab/W8/TrafficlightLCD/xst"
+elaborate
+-ifn TraficLight.prj
+-ifmt mixed

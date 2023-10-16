@@ -1,0 +1,5 @@
+set -tmpdir "G:/HK7/IClab/W8/Time/xst/projnav.tmp"
+set -xsthdpdir "G:/HK7/IClab/W8/Time/xst"
+elaborate
+-ifn COUNTER.prj
+-ifmt mixed

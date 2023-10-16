@@ -1,0 +1,28 @@
+Command line:
+   LEDSANGDON_test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  63511
+
+Wed Sep 20 02:45:59 2023
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 5149.9 Meg
+
+ Total Signals          : 16
+ Total Nets             : 23
+ Total Signal Drivers   : 8
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 12
+ Total Traceable Variables  : 21
+ Total Scalar Nets and Variables : 113
+
+ Total Simulation Time: 0.09375 sec
+
+ Current Memory Usage: 5149.9 Meg
+
+Wed Sep 20 02:46:11 2023
+

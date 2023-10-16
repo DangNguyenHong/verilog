@@ -1,0 +1,5 @@
+set -tmpdir "D:/IC lab/DKLED_TM1638/xst/projnav.tmp"
+set -xsthdpdir "D:/IC lab/DKLED_TM1638/xst"
+elaborate
+-ifn CHIAXUNG.prj
+-ifmt mixed

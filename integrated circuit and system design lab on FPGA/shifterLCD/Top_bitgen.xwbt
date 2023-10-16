@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\IC lab\shifterLCD\Top.ncd
+OUTFILE=D:\IC lab\shifterLCD\Top.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=D:\IC lab\shifterLCD
+LICENSE=ISE
+USER_INFO=212545845_0_0_004

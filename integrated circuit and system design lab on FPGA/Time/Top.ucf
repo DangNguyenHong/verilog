@@ -1,0 +1,19 @@
+# clock
+NET "clk" LOC = C9 | IOSTANDARD = LVCMOS33 ;
+NET "clk" PERIOD = 20.0ns HIGH 50%;
+# LCD control inputs
+NET "lcd_e" LOC = M18 | IOSTANDARD = LVCMOS33 | DRIVE = 4 | SLEW = SLOW
+;
+NET "lcd_rs" LOC = L18 | IOSTANDARD = LVCMOS33 | DRIVE = 4 | SLEW = SLOW
+;
+NET "lcd_rw" LOC = L17 | IOSTANDARD = LVCMOS33 | DRIVE = 4 | SLEW = SLOW
+;
+# The LCD four-bit data interface
+NET "lcd_4" LOC = R15 | IOSTANDARD = LVCMOS33 | DRIVE = 4 | SLEW = SLOW
+;
+NET "lcd_5" LOC = R16 | IOSTANDARD = LVCMOS33 | DRIVE = 4 | SLEW = SLOW
+;
+NET "lcd_6" LOC = P17 | IOSTANDARD = LVCMOS33 | DRIVE = 4 | SLEW = SLOW
+;
+NET "lcd_7" LOC = M15 | IOSTANDARD = LVCMOS33 | DRIVE = 4 | SLEW = SLOW
+;

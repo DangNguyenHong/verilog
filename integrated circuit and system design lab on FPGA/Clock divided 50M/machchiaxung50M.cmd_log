@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/IC lab/machchiaxung50M/machchiaxung50M.xst" -ofn "D:/IC lab/machchiaxung50M/machchiaxung50M.syr" 

@@ -1,0 +1,5 @@
+set -tmpdir "D:/IC lab/LCD_origin/xst/projnav.tmp"
+set -xsthdpdir "D:/IC lab/LCD_origin/xst"
+elaborate
+-ifn LCDtest.prj
+-ifmt mixed

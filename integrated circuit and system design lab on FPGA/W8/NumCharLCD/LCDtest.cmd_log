@@ -1,0 +1,29 @@
+xst -intstyle ise -ifn "G:/HK7/IClab/W8/NumCharLCD/LCDtest.xst" -ofn "G:/HK7/IClab/W8/NumCharLCD/LCDtest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LCDtest.ucf -p xc3s500e-fg320-4 LCDtest.ngc LCDtest.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o LCDtest_map.ncd LCDtest.ngd LCDtest.pcf 
+par -w -intstyle ise -ol high -t 1 LCDtest_map.ncd LCDtest.ncd LCDtest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml LCDtest.twx LCDtest.ncd -o LCDtest.twr LCDtest.pcf -ucf LCDtest.ucf 
+bitgen -intstyle ise -f LCDtest.ut LCDtest.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LCDtest.ucf -p xc3s500e-fg320-4 LCDtest.ngc LCDtest.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o LCDtest_map.ncd LCDtest.ngd LCDtest.pcf 
+par -w -intstyle ise -ol high -t 1 LCDtest_map.ncd LCDtest.ncd LCDtest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml LCDtest.twx LCDtest.ncd -o LCDtest.twr LCDtest.pcf -ucf LCDtest.ucf 
+bitgen -intstyle ise -f LCDtest.ut LCDtest.ncd 
+xst -intstyle ise -ifn "D:/IC lab/W8/NumCharLCD/LCDtest.xst" -ofn "D:/IC lab/W8/NumCharLCD/LCDtest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LCDtest.ucf -p xc3s500e-fg320-4 "LCDtest.ngc" LCDtest.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o LCDtest_map.ncd LCDtest.ngd LCDtest.pcf 
+par -w -intstyle ise -ol high -t 1 LCDtest_map.ncd LCDtest.ncd LCDtest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml LCDtest.twx LCDtest.ncd -o LCDtest.twr LCDtest.pcf -ucf LCDtest.ucf 
+bitgen -intstyle ise -f LCDtest.ut LCDtest.ncd 
+xst -intstyle ise -ifn "D:/IC lab/W8/NumCharLCD/LCDtest.xst" -ofn "D:/IC lab/W8/NumCharLCD/LCDtest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LCDtest.ucf -p xc3s500e-fg320-4 "LCDtest.ngc" LCDtest.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o LCDtest_map.ncd LCDtest.ngd LCDtest.pcf 
+par -w -intstyle ise -ol high -t 1 LCDtest_map.ncd LCDtest.ncd LCDtest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml LCDtest.twx LCDtest.ncd -o LCDtest.twr LCDtest.pcf -ucf LCDtest.ucf 
+bitgen -intstyle ise -f LCDtest.ut LCDtest.ncd 
+xst -intstyle ise -ifn "D:/IC lab/W8/NumCharLCD/LCDtest.xst" -ofn "D:/IC lab/W8/NumCharLCD/LCDtest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LCDtest.ucf -p xc3s500e-fg320-4 "LCDtest.ngc" LCDtest.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o LCDtest_map.ncd LCDtest.ngd LCDtest.pcf 
+par -w -intstyle ise -ol high -t 1 LCDtest_map.ncd LCDtest.ncd LCDtest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml LCDtest.twx LCDtest.ncd -o LCDtest.twr LCDtest.pcf -ucf LCDtest.ucf 
+bitgen -intstyle ise -f LCDtest.ut LCDtest.ncd 

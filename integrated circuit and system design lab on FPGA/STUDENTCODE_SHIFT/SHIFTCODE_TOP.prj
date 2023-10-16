@@ -1,0 +1,6 @@
+verilog work "ADD3.v"
+verilog work "TM1638.v"
+verilog work "SHIFT_CODE.v"
+verilog work "HEX_BCD.v"
+verilog work "CHIAXUNG.v"
+verilog work "SHIFTCODE_TOP.v"

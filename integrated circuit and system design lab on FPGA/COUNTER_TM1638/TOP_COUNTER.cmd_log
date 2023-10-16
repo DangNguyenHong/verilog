@@ -1,0 +1,61 @@
+xst -intstyle ise -ifn "D:/IC lab/COUNTER_TM1638/TOP_COUNTER.xst" -ofn "D:/IC lab/COUNTER_TM1638/TOP_COUNTER.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP_COUNTER.ucf -p xc3s500e-fg320-4 "TOP_COUNTER.ngc" TOP_COUNTER.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o TOP_COUNTER_map.ncd TOP_COUNTER.ngd TOP_COUNTER.pcf 
+xst -intstyle ise -ifn "D:/IC lab/COUNTER_TM1638/TOP_COUNTER.xst" -ofn "D:/IC lab/COUNTER_TM1638/TOP_COUNTER.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP_COUNTER.ucf -p xc3s500e-fg320-4 "TOP_COUNTER.ngc" TOP_COUNTER.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o TOP_COUNTER_map.ncd TOP_COUNTER.ngd TOP_COUNTER.pcf 
+xst -intstyle ise -ifn "D:/IC lab/COUNTER_TM1638/TOP_COUNTER.xst" -ofn "D:/IC lab/COUNTER_TM1638/TOP_COUNTER.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP_COUNTER.ucf -p xc3s500e-fg320-4 "TOP_COUNTER.ngc" TOP_COUNTER.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o TOP_COUNTER_map.ncd TOP_COUNTER.ngd TOP_COUNTER.pcf 
+par -w -intstyle ise -ol high -t 1 TOP_COUNTER_map.ncd TOP_COUNTER.ncd TOP_COUNTER.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TOP_COUNTER.twx TOP_COUNTER.ncd -o TOP_COUNTER.twr TOP_COUNTER.pcf -ucf TOP_COUNTER.ucf 
+bitgen -intstyle ise -f TOP_COUNTER.ut TOP_COUNTER.ncd 
+xst -intstyle ise -ifn "D:/IC lab/COUNTER_TM1638/TOP_COUNTER.xst" -ofn "D:/IC lab/COUNTER_TM1638/TOP_COUNTER.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP_COUNTER.ucf -p xc3s500e-fg320-4 "TOP_COUNTER.ngc" TOP_COUNTER.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o TOP_COUNTER_map.ncd TOP_COUNTER.ngd TOP_COUNTER.pcf 
+par -w -intstyle ise -ol high -t 1 TOP_COUNTER_map.ncd TOP_COUNTER.ncd TOP_COUNTER.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TOP_COUNTER.twx TOP_COUNTER.ncd -o TOP_COUNTER.twr TOP_COUNTER.pcf -ucf TOP_COUNTER.ucf 
+bitgen -intstyle ise -f TOP_COUNTER.ut TOP_COUNTER.ncd 
+xst -intstyle ise -ifn "D:/IC lab/COUNTER_TM1638/TOP_COUNTER.xst" -ofn "D:/IC lab/COUNTER_TM1638/TOP_COUNTER.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP_COUNTER.ucf -p xc3s500e-fg320-4 "TOP_COUNTER.ngc" TOP_COUNTER.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o TOP_COUNTER_map.ncd TOP_COUNTER.ngd TOP_COUNTER.pcf 
+par -w -intstyle ise -ol high -t 1 TOP_COUNTER_map.ncd TOP_COUNTER.ncd TOP_COUNTER.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TOP_COUNTER.twx TOP_COUNTER.ncd -o TOP_COUNTER.twr TOP_COUNTER.pcf -ucf TOP_COUNTER.ucf 
+bitgen -intstyle ise -f TOP_COUNTER.ut TOP_COUNTER.ncd 
+xst -intstyle ise -ifn "D:/IC lab/COUNTER_TM1638/TOP_COUNTER.xst" -ofn "D:/IC lab/COUNTER_TM1638/TOP_COUNTER.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP_COUNTER.ucf -p xc3s500e-fg320-4 "TOP_COUNTER.ngc" TOP_COUNTER.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o TOP_COUNTER_map.ncd TOP_COUNTER.ngd TOP_COUNTER.pcf 
+par -w -intstyle ise -ol high -t 1 TOP_COUNTER_map.ncd TOP_COUNTER.ncd TOP_COUNTER.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TOP_COUNTER.twx TOP_COUNTER.ncd -o TOP_COUNTER.twr TOP_COUNTER.pcf -ucf TOP_COUNTER.ucf 
+bitgen -intstyle ise -f TOP_COUNTER.ut TOP_COUNTER.ncd 
+xst -intstyle ise -ifn "D:/IC lab/COUNTER_TM1638/TOP_COUNTER.xst" -ofn "D:/IC lab/COUNTER_TM1638/TOP_COUNTER.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP_COUNTER.ucf -p xc3s500e-fg320-4 "TOP_COUNTER.ngc" TOP_COUNTER.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o TOP_COUNTER_map.ncd TOP_COUNTER.ngd TOP_COUNTER.pcf 
+par -w -intstyle ise -ol high -t 1 TOP_COUNTER_map.ncd TOP_COUNTER.ncd TOP_COUNTER.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TOP_COUNTER.twx TOP_COUNTER.ncd -o TOP_COUNTER.twr TOP_COUNTER.pcf -ucf TOP_COUNTER.ucf 
+bitgen -intstyle ise -f TOP_COUNTER.ut TOP_COUNTER.ncd 
+xst -intstyle ise -ifn "D:/IC lab/COUNTER_TM1638/TOP_COUNTER.xst" -ofn "D:/IC lab/COUNTER_TM1638/TOP_COUNTER.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP_COUNTER.ucf -p xc3s500e-fg320-4 "TOP_COUNTER.ngc" TOP_COUNTER.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o TOP_COUNTER_map.ncd TOP_COUNTER.ngd TOP_COUNTER.pcf 
+par -w -intstyle ise -ol high -t 1 TOP_COUNTER_map.ncd TOP_COUNTER.ncd TOP_COUNTER.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TOP_COUNTER.twx TOP_COUNTER.ncd -o TOP_COUNTER.twr TOP_COUNTER.pcf -ucf TOP_COUNTER.ucf 
+bitgen -intstyle ise -f TOP_COUNTER.ut TOP_COUNTER.ncd 
+xst -intstyle ise -ifn "D:/IC lab/COUNTER_TM1638/TOP_COUNTER.xst" -ofn "D:/IC lab/COUNTER_TM1638/TOP_COUNTER.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP_COUNTER.ucf -p xc3s500e-fg320-4 "TOP_COUNTER.ngc" TOP_COUNTER.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o TOP_COUNTER_map.ncd TOP_COUNTER.ngd TOP_COUNTER.pcf 
+par -w -intstyle ise -ol high -t 1 TOP_COUNTER_map.ncd TOP_COUNTER.ncd TOP_COUNTER.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TOP_COUNTER.twx TOP_COUNTER.ncd -o TOP_COUNTER.twr TOP_COUNTER.pcf -ucf TOP_COUNTER.ucf 
+bitgen -intstyle ise -f TOP_COUNTER.ut TOP_COUNTER.ncd 
+xst -intstyle ise -ifn "D:/IC lab/COUNTER_TM1638/TOP_COUNTER.xst" -ofn "D:/IC lab/COUNTER_TM1638/TOP_COUNTER.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP_COUNTER.ucf -p xc3s500e-fg320-4 "TOP_COUNTER.ngc" TOP_COUNTER.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o TOP_COUNTER_map.ncd TOP_COUNTER.ngd TOP_COUNTER.pcf 
+par -w -intstyle ise -ol high -t 1 TOP_COUNTER_map.ncd TOP_COUNTER.ncd TOP_COUNTER.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TOP_COUNTER.twx TOP_COUNTER.ncd -o TOP_COUNTER.twr TOP_COUNTER.pcf -ucf TOP_COUNTER.ucf 
+bitgen -intstyle ise -f TOP_COUNTER.ut TOP_COUNTER.ncd 
+xst -intstyle ise -ifn "D:/IC lab/COUNTER_TM1638/TOP_COUNTER.xst" -ofn "D:/IC lab/COUNTER_TM1638/TOP_COUNTER.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP_COUNTER.ucf -p xc3s500e-fg320-4 "TOP_COUNTER.ngc" TOP_COUNTER.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o TOP_COUNTER_map.ncd TOP_COUNTER.ngd TOP_COUNTER.pcf 
+par -w -intstyle ise -ol high -t 1 TOP_COUNTER_map.ncd TOP_COUNTER.ncd TOP_COUNTER.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TOP_COUNTER.twx TOP_COUNTER.ncd -o TOP_COUNTER.twr TOP_COUNTER.pcf -ucf TOP_COUNTER.ucf 
+bitgen -intstyle ise -f TOP_COUNTER.ut TOP_COUNTER.ncd 
+xst -intstyle ise -ifn "D:/IC lab/COUNTER_TM1638/TOP_COUNTER.xst" -ofn "D:/IC lab/COUNTER_TM1638/TOP_COUNTER.syr" 

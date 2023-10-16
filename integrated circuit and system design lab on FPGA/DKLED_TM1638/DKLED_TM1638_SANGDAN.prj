@@ -1,0 +1,4 @@
+verilog work "../TM1638/TM1638.v"
+verilog work "CHIAXUNG.v"
+verilog work "../Control8Led_sangtatdan_1sw/dkledsangtatdan.v"
+verilog work "DKLED_TM1638_SANGDAN.v"

@@ -1,0 +1,4 @@
+verilog work "TM1638.v"
+verilog work "SHIFT_CODE.v"
+verilog work "CHIAXUNG.v"
+verilog work "SHIFTCODE_TOP.v"

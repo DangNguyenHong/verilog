@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\IC lab\Control8Led_sangtatdan_1sw\generalmodule.ncd
+OUTFILE=D:\IC lab\Control8Led_sangtatdan_1sw\generalmodule.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=D:\IC lab\Control8Led_sangtatdan_1sw
+LICENSE=ISE
+USER_INFO=212545845_0_0_004

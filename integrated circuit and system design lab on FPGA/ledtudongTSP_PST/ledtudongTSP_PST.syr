@@ -1,0 +1,434 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: ledtudongTSP_PST.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ledtudongTSP_PST.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ledtudongTSP_PST"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : ledtudongTSP_PST
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "dieuchexung1Hz.v" in library work
+Compiling verilog file "dichledTSP_PST.v" in library work
+Module <dieuchexung1Hz> compiled
+Compiling verilog file "ledtudongTSP_PST.v" in library work
+Module <dichledTSP_PST> compiled
+Module <ledtudongTSP_PST> compiled
+No errors in compilation
+Analysis of file <"ledtudongTSP_PST.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <ledtudongTSP_PST> in library <work>.
+
+Analyzing hierarchy for module <dieuchexung1Hz> in library <work>.
+
+Analyzing hierarchy for module <dichledTSP_PST> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <ledtudongTSP_PST>.
+Module <ledtudongTSP_PST> is correct for synthesis.
+ 
+Analyzing module <dieuchexung1Hz> in library <work>.
+Module <dieuchexung1Hz> is correct for synthesis.
+ 
+Analyzing module <dichledTSP_PST> in library <work>.
+Module <dichledTSP_PST> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <dieuchexung1Hz>.
+    Related source file is "dieuchexung1Hz.v".
+    Found 1-bit register for signal <clk1hz>.
+    Found 25-bit up counter for signal <cnt>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <dieuchexung1Hz> synthesized.
+
+
+Synthesizing Unit <dichledTSP_PST>.
+    Related source file is "dichledTSP_PST.v".
+    Found 8-bit register for signal <led>.
+    Found 1-bit register for signal <s>.
+    Summary:
+	inferred   9 D-type flip-flop(s).
+Unit <dichledTSP_PST> synthesized.
+
+
+Synthesizing Unit <ledtudongTSP_PST>.
+    Related source file is "ledtudongTSP_PST.v".
+Unit <ledtudongTSP_PST> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 25-bit up counter                                     : 1
+# Registers                                            : 3
+ 1-bit register                                        : 2
+ 8-bit register                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 25-bit up counter                                     : 1
+# Registers                                            : 10
+ Flip-Flops                                            : 10
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <ledtudongTSP_PST> ...
+
+Optimizing unit <dichledTSP_PST> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ledtudongTSP_PST, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 35
+ Flip-Flops                                            : 35
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : ledtudongTSP_PST.ngr
+Top Level Output File Name         : ledtudongTSP_PST
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 10
+
+Cell Usage :
+# BELS                             : 108
+#      GND                         : 1
+#      INV                         : 4
+#      LUT1                        : 24
+#      LUT2                        : 1
+#      LUT3                        : 6
+#      LUT3_D                      : 1
+#      LUT4                        : 11
+#      LUT4_D                      : 1
+#      LUT4_L                      : 2
+#      MUXCY                       : 31
+#      VCC                         : 1
+#      XORCY                       : 25
+# FlipFlops/Latches                : 35
+#      FDC                         : 8
+#      FDE                         : 2
+#      FDR                         : 24
+#      FDS                         : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 9
+#      IBUF                        : 1
+#      OBUF                        : 8
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       26  out of   4656     0%  
+ Number of Slice Flip Flops:             35  out of   9312     0%  
+ Number of 4 input LUTs:                 50  out of   9312     0%  
+ Number of IOs:                          10
+ Number of bonded IOBs:                  10  out of    232     4%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 26    |
+xung/clk1hz                        | NONE(dichled/s)        | 9     |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 8     |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 5.119ns (Maximum Frequency: 195.339MHz)
+   Minimum input arrival time before clock: 3.717ns
+   Maximum output required time after clock: 4.571ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.119ns (frequency: 195.339MHz)
+  Total number of paths / destination ports: 976 / 52
+-------------------------------------------------------------------------
+Delay:               5.119ns (Levels of Logic = 7)
+  Source:            xung/cnt_9 (FF)
+  Destination:       xung/cnt_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: xung/cnt_9 to xung/cnt_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.591   0.622  xung/cnt_9 (xung/cnt_9)
+     LUT4:I0->O            1   0.704   0.000  xung/clk1hz_cmp_eq0000_wg_lut<1> (xung/clk1hz_cmp_eq0000_wg_lut<1>)
+     MUXCY:S->O            1   0.464   0.000  xung/clk1hz_cmp_eq0000_wg_cy<1> (xung/clk1hz_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  xung/clk1hz_cmp_eq0000_wg_cy<2> (xung/clk1hz_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  xung/clk1hz_cmp_eq0000_wg_cy<3> (xung/clk1hz_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  xung/clk1hz_cmp_eq0000_wg_cy<4> (xung/clk1hz_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  xung/clk1hz_cmp_eq0000_wg_cy<5> (xung/clk1hz_cmp_eq0000_wg_cy<5>)
+     MUXCY:CI->O          26   0.331   1.260  xung/clk1hz_cmp_eq0000_wg_cy<6> (xung/clk1hz_cmp_eq0000)
+     FDS:S                     0.911          xung/cnt_0
+    ----------------------------------------
+    Total                      5.119ns (3.237ns logic, 1.882ns route)
+                                       (63.2% logic, 36.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'xung/clk1hz'
+  Clock period: 4.729ns (frequency: 211.461MHz)
+  Total number of paths / destination ports: 59 / 9
+-------------------------------------------------------------------------
+Delay:               4.729ns (Levels of Logic = 3)
+  Source:            dichled/led_3 (FF)
+  Destination:       dichled/s (FF)
+  Source Clock:      xung/clk1hz rising
+  Destination Clock: xung/clk1hz rising
+
+  Data Path: dichled/led_3 to dichled/s
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              5   0.591   0.808  dichled/led_3 (dichled/led_3)
+     LUT4:I0->O            1   0.704   0.455  dichled/s_mux00004 (dichled/s_mux00004)
+     LUT3:I2->O            1   0.704   0.455  dichled/s_mux000022 (dichled/s_mux000022)
+     LUT4:I2->O            1   0.704   0.000  dichled/s_mux000037 (dichled/s_mux0000)
+     FDE:D                     0.308          dichled/s
+    ----------------------------------------
+    Total                      4.729ns (3.011ns logic, 1.718ns route)
+                                       (63.7% logic, 36.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'xung/clk1hz'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              3.717ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       dichled/s (FF)
+  Destination Clock: xung/clk1hz rising
+
+  Data Path: reset to dichled/s
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             9   1.218   0.820  reset_IBUF (reset_IBUF)
+     INV:I->O              1   0.704   0.420  dichled/reset_inv1_INV_0 (dichled/reset_inv)
+     FDE:CE                    0.555          dichled/s
+    ----------------------------------------
+    Total                      3.717ns (2.477ns logic, 1.240ns route)
+                                       (66.6% logic, 33.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'xung/clk1hz'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              4.571ns (Levels of Logic = 1)
+  Source:            dichled/led_2 (FF)
+  Destination:       Led<2> (PAD)
+  Source Clock:      xung/clk1hz rising
+
+  Data Path: dichled/led_2 to Led<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              7   0.591   0.708  dichled/led_2 (dichled/led_2)
+     OBUF:I->O                 3.272          Led_2_OBUF (Led<2>)
+    ----------------------------------------
+    Total                      4.571ns (3.863ns logic, 0.708ns route)
+                                       (84.5% logic, 15.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.36 secs
+ 
+--> 
+
+Total memory usage is 4498124 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

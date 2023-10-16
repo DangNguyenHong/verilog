@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Tue Oct 10 20:47:10 2023
+# Process ID: 10840
+# Log file: G:/HK7/IClab/W8/Traffic/planAhead_run_1/planAhead.log
+# Journal file: G:/HK7/IClab/W8/Traffic/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source G:/HK7/IClab/W8/Traffic/pa.fromHdl.tcl
+update_compile_order -fileset sim_1

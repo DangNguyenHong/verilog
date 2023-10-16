@@ -1,0 +1,707 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: GENERAL.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "GENERAL.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "GENERAL"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : GENERAL
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "LED_TSP_PST_TUDONG.v" in library work
+Compiling verilog file "LEDSANG_TATDAN.v" in library work
+Module <LED_TSP_PST_TUDONG> compiled
+Compiling verilog file "LEDSANGDON.v" in library work
+Module <LEDSANG_TATDAN> compiled
+Compiling verilog file "LEDCHOPTAT.v" in library work
+Module <LEDSANGDON> compiled
+Compiling verilog file "DEMUX14.v" in library work
+Module <LEDCHOPTAT> compiled
+Compiling verilog file "CHIAXUNG.v" in library work
+Module <DEMUX14> compiled
+Compiling verilog file "GENERAL.v" in library work
+Module <CHIAXUNG> compiled
+Module <GENERAL> compiled
+No errors in compilation
+Analysis of file <"GENERAL.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <GENERAL> in library <work>.
+
+Analyzing hierarchy for module <CHIAXUNG> in library <work>.
+
+Analyzing hierarchy for module <DEMUX14> in library <work>.
+
+Analyzing hierarchy for module <LEDCHOPTAT> in library <work>.
+
+Analyzing hierarchy for module <LEDSANG_TATDAN> in library <work>.
+
+Analyzing hierarchy for module <LED_TSP_PST_TUDONG> in library <work>.
+
+Analyzing hierarchy for module <LEDSANGDON> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <GENERAL>.
+Module <GENERAL> is correct for synthesis.
+ 
+Analyzing module <CHIAXUNG> in library <work>.
+Module <CHIAXUNG> is correct for synthesis.
+ 
+Analyzing module <DEMUX14> in library <work>.
+Module <DEMUX14> is correct for synthesis.
+ 
+Analyzing module <LEDCHOPTAT> in library <work>.
+Module <LEDCHOPTAT> is correct for synthesis.
+ 
+Analyzing module <LEDSANG_TATDAN> in library <work>.
+Module <LEDSANG_TATDAN> is correct for synthesis.
+ 
+Analyzing module <LED_TSP_PST_TUDONG> in library <work>.
+Module <LED_TSP_PST_TUDONG> is correct for synthesis.
+ 
+Analyzing module <LEDSANGDON> in library <work>.
+Module <LEDSANGDON> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <CHIAXUNG>.
+    Related source file is "CHIAXUNG.v".
+    Found 1-bit register for signal <f>.
+    Found 26-bit register for signal <cnt>.
+    Found 26-bit 4-to-1 multiplexer for signal <cnt$mux0000> created at line 34.
+    Found 26-bit adder for signal <cnt$share0000> created at line 34.
+    Found 1-bit 4-to-1 multiplexer for signal <f$mux0000> created at line 34.
+    Summary:
+	inferred  27 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  27 Multiplexer(s).
+Unit <CHIAXUNG> synthesized.
+
+
+Synthesizing Unit <DEMUX14>.
+    Related source file is "DEMUX14.v".
+    Found 1-bit 4-to-1 multiplexer for signal <a>.
+    Found 1-bit 4-to-1 multiplexer for signal <b>.
+    Found 1-bit 4-to-1 multiplexer for signal <c>.
+    Found 1-bit 4-to-1 multiplexer for signal <d>.
+    Summary:
+	inferred   4 Multiplexer(s).
+Unit <DEMUX14> synthesized.
+
+
+Synthesizing Unit <LEDCHOPTAT>.
+    Related source file is "LEDCHOPTAT.v".
+Unit <LEDCHOPTAT> synthesized.
+
+
+Synthesizing Unit <LEDSANG_TATDAN>.
+    Related source file is "LEDSANG_TATDAN.v".
+    Found 8-bit register for signal <out>.
+    Found 1-bit register for signal <a>.
+    Summary:
+	inferred   9 D-type flip-flop(s).
+Unit <LEDSANG_TATDAN> synthesized.
+
+
+Synthesizing Unit <LED_TSP_PST_TUDONG>.
+    Related source file is "LED_TSP_PST_TUDONG.v".
+    Found 8-bit register for signal <led>.
+    Found 1-bit register for signal <s>.
+    Summary:
+	inferred   9 D-type flip-flop(s).
+Unit <LED_TSP_PST_TUDONG> synthesized.
+
+
+Synthesizing Unit <LEDSANGDON>.
+    Related source file is "LEDSANGDON.v".
+    Found 8-bit register for signal <out>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <LEDSANGDON> synthesized.
+
+
+Synthesizing Unit <GENERAL>.
+    Related source file is "GENERAL.v".
+Unit <GENERAL> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 26-bit adder                                          : 1
+# Registers                                            : 21
+ 1-bit register                                        : 19
+ 26-bit register                                       : 1
+ 8-bit register                                        : 1
+# Multiplexers                                         : 6
+ 1-bit 4-to-1 multiplexer                              : 5
+ 26-bit 4-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 26-bit adder                                          : 1
+# Registers                                            : 53
+ Flip-Flops                                            : 53
+# Multiplexers                                         : 6
+ 1-bit 4-to-1 multiplexer                              : 5
+ 26-bit 4-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <GENERAL> ...
+
+Optimizing unit <CHIAXUNG> ...
+
+Optimizing unit <LEDSANG_TATDAN> ...
+
+Optimizing unit <LED_TSP_PST_TUDONG> ...
+
+Optimizing unit <LEDSANGDON> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block GENERAL, actual ratio is 3.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 53
+ Flip-Flops                                            : 53
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : GENERAL.ngr
+Top Level Output File Name         : GENERAL
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 38
+
+Cell Usage :
+# BELS                             : 241
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 25
+#      LUT2                        : 11
+#      LUT2_L                      : 1
+#      LUT3                        : 20
+#      LUT3_D                      : 2
+#      LUT3_L                      : 1
+#      LUT4                        : 90
+#      LUT4_D                      : 6
+#      LUT4_L                      : 3
+#      MUXCY                       : 25
+#      MUXF5                       : 27
+#      VCC                         : 1
+#      XORCY                       : 26
+# FlipFlops/Latches                : 53
+#      FD                          : 27
+#      FDC                         : 8
+#      FDE                         : 1
+#      FDR                         : 15
+#      FDRS                        : 1
+#      FDS                         : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 37
+#      IBUF                        : 5
+#      OBUF                        : 32
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       83  out of   4656     1%  
+ Number of Slice Flip Flops:             53  out of   9312     0%  
+ Number of 4 input LUTs:                161  out of   9312     1%  
+ Number of IOs:                          38
+ Number of bonded IOBs:                  38  out of    232    16%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 27    |
+n2(demux/Mmux_b11:O)               | NONE(*)(mode2/a)       | 9     |
+n3(demux/Mmux_c11:O)               | NONE(*)(mode3/s)       | 9     |
+n4(demux/Mmux_d11:O)               | NONE(*)(mode4/out_0)   | 8     |
+-----------------------------------+------------------------+-------+
+(*) These 3 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 8     |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 8.013ns (Maximum Frequency: 124.797MHz)
+   Minimum input arrival time before clock: 4.968ns
+   Maximum output required time after clock: 5.941ns
+   Maximum combinational path delay: 6.589ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 8.013ns (frequency: 124.797MHz)
+  Total number of paths / destination ports: 3392 / 27
+-------------------------------------------------------------------------
+Delay:               8.013ns (Levels of Logic = 5)
+  Source:            chiaxung/cnt_3 (FF)
+  Destination:       chiaxung/cnt_24 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: chiaxung/cnt_3 to chiaxung/cnt_24
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.591   0.706  chiaxung/cnt_3 (chiaxung/cnt_3)
+     LUT2_L:I0->LO         1   0.704   0.104  chiaxung/f_cmp_eq00032_SW0 (N8)
+     LUT4:I3->O           13   0.704   0.987  chiaxung/f_cmp_eq00032 (chiaxung/N5)
+     LUT4:I3->O           23   0.704   1.206  chiaxung/f_cmp_eq0001 (chiaxung/f_cmp_eq0001)
+     LUT4_D:I3->O          4   0.704   0.591  chiaxung/Mmux_cnt_mux0000_2_f5_SW1 (N17)
+     LUT4:I3->O            1   0.704   0.000  chiaxung/Mmux_cnt_mux0000_2_f5_10 (chiaxung/cnt_mux0000<1>)
+     FD:D                      0.308          chiaxung/cnt_24
+    ----------------------------------------
+    Total                      8.013ns (4.419ns logic, 3.594ns route)
+                                       (55.1% logic, 44.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'n2'
+  Clock period: 4.905ns (frequency: 203.874MHz)
+  Total number of paths / destination ports: 41 / 10
+-------------------------------------------------------------------------
+Delay:               4.905ns (Levels of Logic = 3)
+  Source:            mode2/out_3 (FF)
+  Destination:       mode2/a (FF)
+  Source Clock:      n2 rising
+  Destination Clock: n2 rising
+
+  Data Path: mode2/out_3 to mode2/a
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              6   0.591   0.844  mode2/out_3 (mode2/out_3)
+     LUT4:I0->O            1   0.704   0.595  mode2/a_mux000029 (mode2/a_mux000029)
+     LUT2:I0->O            1   0.704   0.455  mode2/a_mux000035 (mode2/a_mux000035)
+     LUT4:I2->O            1   0.704   0.000  mode2/a_mux000044 (mode2/a_mux0000)
+     FDS:D                     0.308          mode2/a
+    ----------------------------------------
+    Total                      4.905ns (3.011ns logic, 1.894ns route)
+                                       (61.4% logic, 38.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'n3'
+  Clock period: 4.913ns (frequency: 203.542MHz)
+  Total number of paths / destination ports: 59 / 9
+-------------------------------------------------------------------------
+Delay:               4.913ns (Levels of Logic = 3)
+  Source:            mode3/led_3 (FF)
+  Destination:       mode3/s (FF)
+  Source Clock:      n3 rising
+  Destination Clock: n3 rising
+
+  Data Path: mode3/led_3 to mode3/s
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              5   0.591   0.808  mode3/led_3 (mode3/led_3)
+     LUT4:I0->O            1   0.704   0.499  mode3/s_mux00004 (mode3/s_mux00004)
+     LUT3:I1->O            1   0.704   0.595  mode3/s_mux000022 (mode3/s_mux000022)
+     LUT4:I0->O            1   0.704   0.000  mode3/s_mux000037 (mode3/s_mux0000)
+     FDE:D                     0.308          mode3/s
+    ----------------------------------------
+    Total                      4.913ns (3.011ns logic, 1.902ns route)
+                                       (61.3% logic, 38.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'n4'
+  Clock period: 5.965ns (frequency: 167.645MHz)
+  Total number of paths / destination ports: 113 / 8
+-------------------------------------------------------------------------
+Delay:               5.965ns (Levels of Logic = 4)
+  Source:            mode4/out_3 (FF)
+  Destination:       mode4/out_0 (FF)
+  Source Clock:      n4 rising
+  Destination Clock: n4 rising
+
+  Data Path: mode4/out_3 to mode4/out_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              5   0.591   0.808  mode4/out_3 (mode4/out_3)
+     LUT4_L:I0->LO         1   0.704   0.135  mode4/out_6_or000054 (mode4/out_6_or000054)
+     LUT3:I2->O            1   0.704   0.595  mode4/out_6_or000055 (mode4/out_6_or000055)
+     LUT4_D:I0->O          5   0.704   0.712  mode4/out_6_or000072 (mode4/out_6_or0000)
+     LUT2:I1->O            1   0.704   0.000  mode4/out_4_mux00001 (mode4/out_4_mux0000)
+     FDR:D                     0.308          mode4/out_4
+    ----------------------------------------
+    Total                      5.965ns (3.715ns logic, 2.250ns route)
+                                       (62.3% logic, 37.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 81 / 27
+-------------------------------------------------------------------------
+Offset:              4.968ns (Levels of Logic = 3)
+  Source:            sf<0> (PAD)
+  Destination:       chiaxung/cnt_24 (FF)
+  Destination Clock: clk rising
+
+  Data Path: sf<0> to chiaxung/cnt_24
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            50   1.218   1.443  sf_0_IBUF (sf_0_IBUF)
+     LUT4_D:I0->O          4   0.704   0.591  chiaxung/Mmux_cnt_mux0000_2_f5_SW1 (N17)
+     LUT4:I3->O            1   0.704   0.000  chiaxung/Mmux_cnt_mux0000_2_f5_10 (chiaxung/cnt_mux0000<1>)
+     FD:D                      0.308          chiaxung/cnt_24
+    ----------------------------------------
+    Total                      4.968ns (2.934ns logic, 2.034ns route)
+                                       (59.1% logic, 40.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'n2'
+  Total number of paths / destination ports: 9 / 9
+-------------------------------------------------------------------------
+Offset:              3.389ns (Levels of Logic = 1)
+  Source:            reset (PAD)
+  Destination:       mode2/a (FF)
+  Destination Clock: n2 rising
+
+  Data Path: reset to mode2/a
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            26   1.218   1.260  reset_IBUF (reset_IBUF)
+     FDR:R                     0.911          mode2/out_5
+    ----------------------------------------
+    Total                      3.389ns (2.129ns logic, 1.260ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'n3'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.157ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       mode3/s (FF)
+  Destination Clock: n3 rising
+
+  Data Path: reset to mode3/s
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            26   1.218   1.260  reset_IBUF (reset_IBUF)
+     INV:I->O              1   0.704   0.420  mode3/reset_inv1_INV_0 (mode3/reset_inv)
+     FDE:CE                    0.555          mode3/s
+    ----------------------------------------
+    Total                      4.157ns (2.477ns logic, 1.680ns route)
+                                       (59.6% logic, 40.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'n4'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              4.548ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       mode4/out_7 (FF)
+  Destination Clock: n4 rising
+
+  Data Path: reset to mode4/out_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            26   1.218   1.295  reset_IBUF (reset_IBUF)
+     LUT3:I2->O            1   0.704   0.420  mode4/out_7_or000018 (mode4/out_7_or0000)
+     FDR:R                     0.911          mode4/out_7
+    ----------------------------------------
+    Total                      4.548ns (2.833ns logic, 1.715ns route)
+                                       (62.3% logic, 37.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              5.941ns (Levels of Logic = 2)
+  Source:            chiaxung/f (FF)
+  Destination:       LED1<7> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: chiaxung/f to LED1<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               7   0.591   0.787  chiaxung/f (chiaxung/f)
+     LUT3:I1->O            4   0.704   0.587  mode1/led<3>1 (LED1_1_OBUF)
+     OBUF:I->O                 3.272          LED1_7_OBUF (LED1<7>)
+    ----------------------------------------
+    Total                      5.941ns (4.567ns logic, 1.374ns route)
+                                       (76.9% logic, 23.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'n2'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              4.532ns (Levels of Logic = 1)
+  Source:            mode2/out_7 (FF)
+  Destination:       LED2<7> (PAD)
+  Source Clock:      n2 rising
+
+  Data Path: mode2/out_7 to LED2<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRS:C->Q             6   0.591   0.669  mode2/out_7 (mode2/out_7)
+     OBUF:I->O                 3.272          LED2_7_OBUF (LED2<7>)
+    ----------------------------------------
+    Total                      4.532ns (3.863ns logic, 0.669ns route)
+                                       (85.2% logic, 14.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'n3'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              4.571ns (Levels of Logic = 1)
+  Source:            mode3/led_2 (FF)
+  Destination:       LED3<2> (PAD)
+  Source Clock:      n3 rising
+
+  Data Path: mode3/led_2 to LED3<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              7   0.591   0.708  mode3/led_2 (mode3/led_2)
+     OBUF:I->O                 3.272          LED3_2_OBUF (LED3<2>)
+    ----------------------------------------
+    Total                      4.571ns (3.863ns logic, 0.708ns route)
+                                       (84.5% logic, 15.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'n4'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              4.532ns (Levels of Logic = 1)
+  Source:            mode4/out_6 (FF)
+  Destination:       LED4<6> (PAD)
+  Source Clock:      n4 rising
+
+  Data Path: mode4/out_6 to LED4<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              6   0.591   0.669  mode4/out_6 (mode4/out_6)
+     OBUF:I->O                 3.272          LED4_6_OBUF (LED4<6>)
+    ----------------------------------------
+    Total                      4.532ns (3.863ns logic, 0.669ns route)
+                                       (85.2% logic, 14.8% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 16 / 8
+-------------------------------------------------------------------------
+Delay:               6.589ns (Levels of Logic = 3)
+  Source:            mode<1> (PAD)
+  Destination:       LED1<7> (PAD)
+
+  Data Path: mode<1> to LED1<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   1.218   0.808  mode_1_IBUF (mode_1_IBUF)
+     LUT3:I0->O            4   0.704   0.587  mode1/led<3>1 (LED1_1_OBUF)
+     OBUF:I->O                 3.272          LED1_7_OBUF (LED1<7>)
+    ----------------------------------------
+    Total                      6.589ns (5.194ns logic, 1.395ns route)
+                                       (78.8% logic, 21.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.62 secs
+ 
+--> 
+
+Total memory usage is 4502220 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

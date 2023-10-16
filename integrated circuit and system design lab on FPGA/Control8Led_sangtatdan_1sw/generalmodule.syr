@@ -1,0 +1,433 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Reading design: generalmodule.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "generalmodule.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "generalmodule"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : generalmodule
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "dkledsangtatdan.v" in library work
+Compiling verilog file "chiaxung50Mto1Hz.v" in library work
+Module <dkledsangtatdan> compiled
+Compiling verilog file "generalmodule.v" in library work
+Module <chiaxung50Mto1Hz> compiled
+Module <generalmodule> compiled
+No errors in compilation
+Analysis of file <"generalmodule.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <generalmodule> in library <work>.
+
+Analyzing hierarchy for module <chiaxung50Mto1Hz> in library <work>.
+
+Analyzing hierarchy for module <dkledsangtatdan> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <generalmodule>.
+Module <generalmodule> is correct for synthesis.
+ 
+Analyzing module <chiaxung50Mto1Hz> in library <work>.
+Module <chiaxung50Mto1Hz> is correct for synthesis.
+ 
+Analyzing module <dkledsangtatdan> in library <work>.
+Module <dkledsangtatdan> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <chiaxung50Mto1Hz>.
+    Related source file is "chiaxung50Mto1Hz.v".
+    Found 1-bit register for signal <clk1hz>.
+    Found 25-bit up counter for signal <cnt>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <chiaxung50Mto1Hz> synthesized.
+
+
+Synthesizing Unit <dkledsangtatdan>.
+    Related source file is "dkledsangtatdan.v".
+    Found 8-bit register for signal <out>.
+    Found 1-bit register for signal <a>.
+    Found 1-bit register for signal <b>.
+    Summary:
+	inferred  10 D-type flip-flop(s).
+Unit <dkledsangtatdan> synthesized.
+
+
+Synthesizing Unit <generalmodule>.
+    Related source file is "generalmodule.v".
+Unit <generalmodule> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 25-bit up counter                                     : 1
+# Registers                                            : 11
+ 1-bit register                                        : 11
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 25-bit up counter                                     : 1
+# Registers                                            : 11
+ Flip-Flops                                            : 11
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <generalmodule> ...
+
+Optimizing unit <dkledsangtatdan> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block generalmodule, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 36
+ Flip-Flops                                            : 36
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : generalmodule.ngr
+Top Level Output File Name         : generalmodule
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 11
+
+Cell Usage :
+# BELS                             : 116
+#      GND                         : 1
+#      INV                         : 4
+#      LUT1                        : 24
+#      LUT2                        : 1
+#      LUT3                        : 7
+#      LUT3_L                      : 1
+#      LUT4                        : 16
+#      LUT4_D                      : 2
+#      LUT4_L                      : 1
+#      MUXCY                       : 31
+#      MUXF5                       : 2
+#      VCC                         : 1
+#      XORCY                       : 25
+# FlipFlops/Latches                : 36
+#      FDE                         : 1
+#      FDR                         : 32
+#      FDS                         : 1
+#      FDSE                        : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 10
+#      IBUF                        : 2
+#      OBUF                        : 8
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       29  out of   4656     0%  
+ Number of Slice Flip Flops:             36  out of   9312     0%  
+ Number of 4 input LUTs:                 56  out of   9312     0%  
+ Number of IOs:                          11
+ Number of bonded IOBs:                  11  out of    232     4%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk50M                             | BUFGP                  | 26    |
+dieuche1hz/clk1hz                  | NONE(dieukhienled/b)   | 10    |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 6.112ns (Maximum Frequency: 163.613MHz)
+   Minimum input arrival time before clock: 3.779ns
+   Maximum output required time after clock: 4.571ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk50M'
+  Clock period: 5.119ns (frequency: 195.339MHz)
+  Total number of paths / destination ports: 976 / 52
+-------------------------------------------------------------------------
+Delay:               5.119ns (Levels of Logic = 7)
+  Source:            dieuche1hz/cnt_9 (FF)
+  Destination:       dieuche1hz/cnt_0 (FF)
+  Source Clock:      clk50M rising
+  Destination Clock: clk50M rising
+
+  Data Path: dieuche1hz/cnt_9 to dieuche1hz/cnt_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.591   0.622  dieuche1hz/cnt_9 (dieuche1hz/cnt_9)
+     LUT4:I0->O            1   0.704   0.000  dieuche1hz/clk1hz_cmp_eq0000_wg_lut<1> (dieuche1hz/clk1hz_cmp_eq0000_wg_lut<1>)
+     MUXCY:S->O            1   0.464   0.000  dieuche1hz/clk1hz_cmp_eq0000_wg_cy<1> (dieuche1hz/clk1hz_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  dieuche1hz/clk1hz_cmp_eq0000_wg_cy<2> (dieuche1hz/clk1hz_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  dieuche1hz/clk1hz_cmp_eq0000_wg_cy<3> (dieuche1hz/clk1hz_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  dieuche1hz/clk1hz_cmp_eq0000_wg_cy<4> (dieuche1hz/clk1hz_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  dieuche1hz/clk1hz_cmp_eq0000_wg_cy<5> (dieuche1hz/clk1hz_cmp_eq0000_wg_cy<5>)
+     MUXCY:CI->O          26   0.331   1.260  dieuche1hz/clk1hz_cmp_eq0000_wg_cy<6> (dieuche1hz/clk1hz_cmp_eq0000)
+     FDS:S                     0.911          dieuche1hz/cnt_0
+    ----------------------------------------
+    Total                      5.119ns (3.237ns logic, 1.882ns route)
+                                       (63.2% logic, 36.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'dieuche1hz/clk1hz'
+  Clock period: 6.112ns (frequency: 163.613MHz)
+  Total number of paths / destination ports: 156 / 10
+-------------------------------------------------------------------------
+Delay:               6.112ns (Levels of Logic = 5)
+  Source:            dieukhienled/out_0 (FF)
+  Destination:       dieukhienled/out_0 (FF)
+  Source Clock:      dieuche1hz/clk1hz rising
+  Destination Clock: dieuche1hz/clk1hz rising
+
+  Data Path: dieukhienled/out_0 to dieukhienled/out_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              6   0.591   0.844  dieukhienled/out_0 (dieukhienled/out_0)
+     LUT3:I0->O            1   0.704   0.424  dieukhienled/out_7_or000052_SW0 (N2)
+     LUT4_L:I3->LO         1   0.704   0.135  dieukhienled/out_7_or000052 (dieukhienled/out_7_or000052)
+     LUT4:I2->O            6   0.704   0.673  dieukhienled/out_7_or000070 (dieukhienled/out_7_or0000)
+     LUT4:I3->O            1   0.704   0.000  dieukhienled/out_0_mux00012110_F (N4)
+     MUXF5:I0->O           1   0.321   0.000  dieukhienled/out_0_mux00012110 (dieukhienled/out_0_mux0001)
+     FDR:D                     0.308          dieukhienled/out_0
+    ----------------------------------------
+    Total                      6.112ns (4.036ns logic, 2.076ns route)
+                                       (66.0% logic, 34.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'dieuche1hz/clk1hz'
+  Total number of paths / destination ports: 20 / 20
+-------------------------------------------------------------------------
+Offset:              3.779ns (Levels of Logic = 2)
+  Source:            mode (PAD)
+  Destination:       dieukhienled/a (FF)
+  Destination Clock: dieuche1hz/clk1hz rising
+
+  Data Path: mode to dieukhienled/a
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            10   1.218   0.882  mode_IBUF (mode_IBUF)
+     INV:I->O              1   0.704   0.420  dieukhienled/mode_inv1_INV_0 (dieukhienled/mode_inv)
+     FDSE:CE                   0.555          dieukhienled/a
+    ----------------------------------------
+    Total                      3.779ns (2.477ns logic, 1.302ns route)
+                                       (65.5% logic, 34.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'dieuche1hz/clk1hz'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              4.571ns (Levels of Logic = 1)
+  Source:            dieukhienled/out_6 (FF)
+  Destination:       led<6> (PAD)
+  Source Clock:      dieuche1hz/clk1hz rising
+
+  Data Path: dieukhienled/out_6 to led<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              7   0.591   0.708  dieukhienled/out_6 (dieukhienled/out_6)
+     OBUF:I->O                 3.272          led_6_OBUF (led<6>)
+    ----------------------------------------
+    Total                      4.571ns (3.863ns logic, 0.708ns route)
+                                       (84.5% logic, 15.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.90 secs
+ 
+--> 
+
+Total memory usage is 4499788 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

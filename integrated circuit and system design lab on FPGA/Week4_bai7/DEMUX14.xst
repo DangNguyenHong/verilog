@@ -1,0 +1,5 @@
+set -tmpdir "D:/IC lab/Week4_bai7/xst/projnav.tmp"
+set -xsthdpdir "D:/IC lab/Week4_bai7/xst"
+elaborate
+-ifn DEMUX14.prj
+-ifmt mixed

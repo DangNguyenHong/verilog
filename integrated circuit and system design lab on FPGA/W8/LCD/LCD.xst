@@ -1,0 +1,5 @@
+set -tmpdir "G:/HK7/IClab/W8/LCD/xst/projnav.tmp"
+set -xsthdpdir "G:/HK7/IClab/W8/LCD/xst"
+elaborate
+-ifn LCD.prj
+-ifmt mixed

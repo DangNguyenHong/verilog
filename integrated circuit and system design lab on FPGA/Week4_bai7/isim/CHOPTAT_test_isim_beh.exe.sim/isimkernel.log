@@ -1,0 +1,28 @@
+Command line:
+   CHOPTAT_test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  63464
+
+Wed Sep 20 02:22:58 2023
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 5149.97 Meg
+
+ Total Signals          : 15
+ Total Nets             : 22
+ Total Signal Drivers   : 7
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 11
+ Total Traceable Variables  : 21
+ Total Scalar Nets and Variables : 136
+
+ Total Simulation Time: 0.078125 sec
+
+ Current Memory Usage: 5149.97 Meg
+
+Wed Sep 20 02:23:17 2023
+

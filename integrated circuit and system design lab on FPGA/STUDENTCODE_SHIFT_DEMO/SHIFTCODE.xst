@@ -1,0 +1,5 @@
+set -tmpdir "D:/IC lab/STUDENTCODE_SHIFT_DEMO/xst/projnav.tmp"
+set -xsthdpdir "D:/IC lab/STUDENTCODE_SHIFT_DEMO/xst"
+elaborate
+-ifn SHIFTCODE.prj
+-ifmt mixed

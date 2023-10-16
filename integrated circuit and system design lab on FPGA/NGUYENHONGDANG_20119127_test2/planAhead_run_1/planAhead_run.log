@@ -1,0 +1,95 @@
+
+****** PlanAhead v14.7 (64-bit)
+  **** Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from D:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [D:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [D:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source {D:/IC lab/NGUYENHONGDANG_20119127_test2/pa.fromHdl.tcl}
+# create_project -name NGUYENHONGDANG_20119127_test2 -dir "D:/IC lab/NGUYENHONGDANG_20119127_test2/planAhead_run_1" -part xc3s500efg320-4
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "NGUYENHONGDANG.ucf" [current_fileset -constrset]
+Adding file 'D:/IC lab/NGUYENHONGDANG_20119127_test2/NGUYENHONGDANG.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {ADD3.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../TM1638/TM1638.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {UPDOWNCOUNTER.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {HEX_BCD.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {DEMUX12.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {CHIAXUNG.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {NGUYENHONGDANG.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top NGUYENHONGDANG $srcset
+# add_files [list {NGUYENHONGDANG.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc3s500efg320-4
+Using Verific elaboration
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "D:/IC lab/NGUYENHONGDANG_20119127_test2/ADD3.v" into library work
+Analyzing Verilog file "D:/IC lab/TM1638/TM1638.v" into library work
+Analyzing Verilog file "D:/IC lab/NGUYENHONGDANG_20119127_test2/UPDOWNCOUNTER.v" into library work
+Analyzing Verilog file "D:/IC lab/NGUYENHONGDANG_20119127_test2/HEX_BCD.v" into library work
+Analyzing Verilog file "D:/IC lab/NGUYENHONGDANG_20119127_test2/DEMUX12.v" into library work
+Analyzing Verilog file "D:/IC lab/NGUYENHONGDANG_20119127_test2/CHIAXUNG.v" into library work
+Analyzing Verilog file "D:/IC lab/NGUYENHONGDANG_20119127_test2/NGUYENHONGDANG.v" into library work
+INFO: [Designutils 20-910] Reading macro library D:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn
+Parsing EDIF File [D:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Finished Parsing EDIF File [D:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Loading clock regions from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/ClockRegion.xml
+Loading clock buffers from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/ClockBuffers.xml
+Loading package from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/fg320/Package.xml
+Loading io standards from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/fg320/SSORules.xml
+Loading list of drcs for the architecture : D:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/drc.xml
+INFO: [Timing 38-77] Reading timing library D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+INFO: [Timing 38-34] Done reading timing library D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+Parsing UCF File [D:/IC lab/NGUYENHONGDANG_20119127_test2/NGUYENHONGDANG.ucf]
+Finished Parsing UCF File [D:/IC lab/NGUYENHONGDANG_20119127_test2/NGUYENHONGDANG.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 676f3cd6
+open_rtl_design: Time (s): elapsed = 00:00:13 . Memory (MB): peak = 539.844 ; gain = 122.676
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin C9 [get_ports clki]
+endgroup
+startgroup
+set_property package_pin F8 [get_ports clko]
+endgroup
+startgroup
+set_property package_pin C7 [get_ports dio]
+endgroup
+startgroup
+set_property package_pin E8 [get_ports stb]
+endgroup
+startgroup
+set_property package_pin L13 [get_ports sw0]
+endgroup
+startgroup
+set_property package_pin L14 [get_ports sw1]
+endgroup
+startgroup
+set_property package_pin H18 [get_ports sw2]
+endgroup
+save_constraints
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Fri Sep 29 01:04:10 2023...
+INFO: [Common 17-83] Releasing license: PlanAhead

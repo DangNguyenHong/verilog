@@ -1,0 +1,13 @@
+xst -intstyle ise -ifn "D:/IC lab/ledtudongTSP_PST/ledtudongTSP_PST.xst" -ofn "D:/IC lab/ledtudongTSP_PST/ledtudongTSP_PST.syr" 
+xst -intstyle ise -ifn "D:/IC lab/ledtudongTSP_PST/ledtudongTSP_PST.xst" -ofn "D:/IC lab/ledtudongTSP_PST/ledtudongTSP_PST.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ledtudongTSP_PST.ucf -p xc3s500e-fg320-4 "ledtudongTSP_PST.ngc" ledtudongTSP_PST.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o ledtudongTSP_PST_map.ncd ledtudongTSP_PST.ngd ledtudongTSP_PST.pcf 
+par -w -intstyle ise -ol high -t 1 ledtudongTSP_PST_map.ncd ledtudongTSP_PST.ncd ledtudongTSP_PST.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ledtudongTSP_PST.twx ledtudongTSP_PST.ncd -o ledtudongTSP_PST.twr ledtudongTSP_PST.pcf -ucf ledtudongTSP_PST.ucf 
+bitgen -intstyle ise -f ledtudongTSP_PST.ut ledtudongTSP_PST.ncd 
+xst -intstyle ise -ifn "D:/IC lab/ledtudongTSP_PST/ledtudongTSP_PST.xst" -ofn "D:/IC lab/ledtudongTSP_PST/ledtudongTSP_PST.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ledtudongTSP_PST.ucf -p xc3s500e-fg320-4 "ledtudongTSP_PST.ngc" ledtudongTSP_PST.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o ledtudongTSP_PST_map.ncd ledtudongTSP_PST.ngd ledtudongTSP_PST.pcf 
+par -w -intstyle ise -ol high -t 1 ledtudongTSP_PST_map.ncd ledtudongTSP_PST.ncd ledtudongTSP_PST.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ledtudongTSP_PST.twx ledtudongTSP_PST.ncd -o ledtudongTSP_PST.twr ledtudongTSP_PST.pcf -ucf ledtudongTSP_PST.ucf 
+bitgen -intstyle ise -f ledtudongTSP_PST.ut ledtudongTSP_PST.ncd 

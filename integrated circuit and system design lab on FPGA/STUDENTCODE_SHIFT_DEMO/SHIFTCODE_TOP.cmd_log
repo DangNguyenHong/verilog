@@ -1,0 +1,150 @@
+xst -intstyle ise -ifn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.xst" -ofn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.syr" 
+xst -intstyle ise -ifn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.xst" -ofn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.syr" 
+xst -intstyle ise -ifn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.xst" -ofn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.syr" 
+xst -intstyle ise -ifn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.xst" -ofn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "SHIFTCODE_TOP.ngc" SHIFTCODE_TOP.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o SHIFTCODE_TOP_map.ncd SHIFTCODE_TOP.ngd SHIFTCODE_TOP.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SHIFTCODE_TOP.ucf -p xc3s500e-fg320-4 "SHIFTCODE_TOP.ngc" SHIFTCODE_TOP.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o SHIFTCODE_TOP_map.ncd SHIFTCODE_TOP.ngd SHIFTCODE_TOP.pcf 
+par -w -intstyle ise -ol high -t 1 SHIFTCODE_TOP_map.ncd SHIFTCODE_TOP.ncd SHIFTCODE_TOP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SHIFTCODE_TOP.twx SHIFTCODE_TOP.ncd -o SHIFTCODE_TOP.twr SHIFTCODE_TOP.pcf -ucf SHIFTCODE_TOP.ucf 
+bitgen -intstyle ise -f SHIFTCODE_TOP.ut SHIFTCODE_TOP.ncd 
+xst -intstyle ise -ifn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.xst" -ofn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SHIFTCODE_TOP.ucf -p xc3s500e-fg320-4 "SHIFTCODE_TOP.ngc" SHIFTCODE_TOP.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o SHIFTCODE_TOP_map.ncd SHIFTCODE_TOP.ngd SHIFTCODE_TOP.pcf 
+par -w -intstyle ise -ol high -t 1 SHIFTCODE_TOP_map.ncd SHIFTCODE_TOP.ncd SHIFTCODE_TOP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SHIFTCODE_TOP.twx SHIFTCODE_TOP.ncd -o SHIFTCODE_TOP.twr SHIFTCODE_TOP.pcf -ucf SHIFTCODE_TOP.ucf 
+bitgen -intstyle ise -f SHIFTCODE_TOP.ut SHIFTCODE_TOP.ncd 
+xst -intstyle ise -ifn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.xst" -ofn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.syr" 
+xst -intstyle ise -ifn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.xst" -ofn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.syr" 
+xst -intstyle ise -ifn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.xst" -ofn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SHIFTCODE_TOP.ucf -p xc3s500e-fg320-4 "SHIFTCODE_TOP.ngc" SHIFTCODE_TOP.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o SHIFTCODE_TOP_map.ncd SHIFTCODE_TOP.ngd SHIFTCODE_TOP.pcf 
+par -w -intstyle ise -ol high -t 1 SHIFTCODE_TOP_map.ncd SHIFTCODE_TOP.ncd SHIFTCODE_TOP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SHIFTCODE_TOP.twx SHIFTCODE_TOP.ncd -o SHIFTCODE_TOP.twr SHIFTCODE_TOP.pcf -ucf SHIFTCODE_TOP.ucf 
+bitgen -intstyle ise -f SHIFTCODE_TOP.ut SHIFTCODE_TOP.ncd 
+xst -intstyle ise -ifn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.xst" -ofn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SHIFTCODE_TOP.ucf -p xc3s500e-fg320-4 "SHIFTCODE_TOP.ngc" SHIFTCODE_TOP.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o SHIFTCODE_TOP_map.ncd SHIFTCODE_TOP.ngd SHIFTCODE_TOP.pcf 
+par -w -intstyle ise -ol high -t 1 SHIFTCODE_TOP_map.ncd SHIFTCODE_TOP.ncd SHIFTCODE_TOP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SHIFTCODE_TOP.twx SHIFTCODE_TOP.ncd -o SHIFTCODE_TOP.twr SHIFTCODE_TOP.pcf -ucf SHIFTCODE_TOP.ucf 
+bitgen -intstyle ise -f SHIFTCODE_TOP.ut SHIFTCODE_TOP.ncd 
+xst -intstyle ise -ifn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.xst" -ofn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SHIFTCODE_TOP.ucf -p xc3s500e-fg320-4 "SHIFTCODE_TOP.ngc" SHIFTCODE_TOP.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o SHIFTCODE_TOP_map.ncd SHIFTCODE_TOP.ngd SHIFTCODE_TOP.pcf 
+par -w -intstyle ise -ol high -t 1 SHIFTCODE_TOP_map.ncd SHIFTCODE_TOP.ncd SHIFTCODE_TOP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SHIFTCODE_TOP.twx SHIFTCODE_TOP.ncd -o SHIFTCODE_TOP.twr SHIFTCODE_TOP.pcf -ucf SHIFTCODE_TOP.ucf 
+bitgen -intstyle ise -f SHIFTCODE_TOP.ut SHIFTCODE_TOP.ncd 
+xst -intstyle ise -ifn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.xst" -ofn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SHIFTCODE_TOP.ucf -p xc3s500e-fg320-4 "SHIFTCODE_TOP.ngc" SHIFTCODE_TOP.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o SHIFTCODE_TOP_map.ncd SHIFTCODE_TOP.ngd SHIFTCODE_TOP.pcf 
+par -w -intstyle ise -ol high -t 1 SHIFTCODE_TOP_map.ncd SHIFTCODE_TOP.ncd SHIFTCODE_TOP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SHIFTCODE_TOP.twx SHIFTCODE_TOP.ncd -o SHIFTCODE_TOP.twr SHIFTCODE_TOP.pcf -ucf SHIFTCODE_TOP.ucf 
+bitgen -intstyle ise -f SHIFTCODE_TOP.ut SHIFTCODE_TOP.ncd 
+xst -intstyle ise -ifn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.xst" -ofn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SHIFTCODE_TOP.ucf -p xc3s500e-fg320-4 "SHIFTCODE_TOP.ngc" SHIFTCODE_TOP.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o SHIFTCODE_TOP_map.ncd SHIFTCODE_TOP.ngd SHIFTCODE_TOP.pcf 
+par -w -intstyle ise -ol high -t 1 SHIFTCODE_TOP_map.ncd SHIFTCODE_TOP.ncd SHIFTCODE_TOP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SHIFTCODE_TOP.twx SHIFTCODE_TOP.ncd -o SHIFTCODE_TOP.twr SHIFTCODE_TOP.pcf -ucf SHIFTCODE_TOP.ucf 
+bitgen -intstyle ise -f SHIFTCODE_TOP.ut SHIFTCODE_TOP.ncd 
+xst -intstyle ise -ifn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.xst" -ofn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SHIFTCODE_TOP.ucf -p xc3s500e-fg320-4 "SHIFTCODE_TOP.ngc" SHIFTCODE_TOP.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o SHIFTCODE_TOP_map.ncd SHIFTCODE_TOP.ngd SHIFTCODE_TOP.pcf 
+par -w -intstyle ise -ol high -t 1 SHIFTCODE_TOP_map.ncd SHIFTCODE_TOP.ncd SHIFTCODE_TOP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SHIFTCODE_TOP.twx SHIFTCODE_TOP.ncd -o SHIFTCODE_TOP.twr SHIFTCODE_TOP.pcf -ucf SHIFTCODE_TOP.ucf 
+bitgen -intstyle ise -f SHIFTCODE_TOP.ut SHIFTCODE_TOP.ncd 
+xst -intstyle ise -ifn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.xst" -ofn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SHIFTCODE_TOP.ucf -p xc3s500e-fg320-4 "SHIFTCODE_TOP.ngc" SHIFTCODE_TOP.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o SHIFTCODE_TOP_map.ncd SHIFTCODE_TOP.ngd SHIFTCODE_TOP.pcf 
+par -w -intstyle ise -ol high -t 1 SHIFTCODE_TOP_map.ncd SHIFTCODE_TOP.ncd SHIFTCODE_TOP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SHIFTCODE_TOP.twx SHIFTCODE_TOP.ncd -o SHIFTCODE_TOP.twr SHIFTCODE_TOP.pcf -ucf SHIFTCODE_TOP.ucf 
+bitgen -intstyle ise -f SHIFTCODE_TOP.ut SHIFTCODE_TOP.ncd 
+xst -intstyle ise -ifn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.xst" -ofn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SHIFTCODE_TOP.ucf -p xc3s500e-fg320-4 "SHIFTCODE_TOP.ngc" SHIFTCODE_TOP.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o SHIFTCODE_TOP_map.ncd SHIFTCODE_TOP.ngd SHIFTCODE_TOP.pcf 
+par -w -intstyle ise -ol high -t 1 SHIFTCODE_TOP_map.ncd SHIFTCODE_TOP.ncd SHIFTCODE_TOP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SHIFTCODE_TOP.twx SHIFTCODE_TOP.ncd -o SHIFTCODE_TOP.twr SHIFTCODE_TOP.pcf -ucf SHIFTCODE_TOP.ucf 
+bitgen -intstyle ise -f SHIFTCODE_TOP.ut SHIFTCODE_TOP.ncd 
+xst -intstyle ise -ifn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.xst" -ofn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SHIFTCODE_TOP.ucf -p xc3s500e-fg320-4 "SHIFTCODE_TOP.ngc" SHIFTCODE_TOP.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o SHIFTCODE_TOP_map.ncd SHIFTCODE_TOP.ngd SHIFTCODE_TOP.pcf 
+par -w -intstyle ise -ol high -t 1 SHIFTCODE_TOP_map.ncd SHIFTCODE_TOP.ncd SHIFTCODE_TOP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SHIFTCODE_TOP.twx SHIFTCODE_TOP.ncd -o SHIFTCODE_TOP.twr SHIFTCODE_TOP.pcf -ucf SHIFTCODE_TOP.ucf 
+bitgen -intstyle ise -f SHIFTCODE_TOP.ut SHIFTCODE_TOP.ncd 
+xst -intstyle ise -ifn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.xst" -ofn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SHIFTCODE_TOP.ucf -p xc3s500e-fg320-4 "SHIFTCODE_TOP.ngc" SHIFTCODE_TOP.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o SHIFTCODE_TOP_map.ncd SHIFTCODE_TOP.ngd SHIFTCODE_TOP.pcf 
+par -w -intstyle ise -ol high -t 1 SHIFTCODE_TOP_map.ncd SHIFTCODE_TOP.ncd SHIFTCODE_TOP.pcf 
+bitgen -intstyle ise -f SHIFTCODE_TOP.ut SHIFTCODE_TOP.ncd 
+xst -intstyle ise -ifn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.xst" -ofn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SHIFTCODE_TOP.ucf -p xc3s500e-fg320-4 "SHIFTCODE_TOP.ngc" SHIFTCODE_TOP.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o SHIFTCODE_TOP_map.ncd SHIFTCODE_TOP.ngd SHIFTCODE_TOP.pcf 
+par -w -intstyle ise -ol high -t 1 SHIFTCODE_TOP_map.ncd SHIFTCODE_TOP.ncd SHIFTCODE_TOP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SHIFTCODE_TOP.twx SHIFTCODE_TOP.ncd -o SHIFTCODE_TOP.twr SHIFTCODE_TOP.pcf -ucf SHIFTCODE_TOP.ucf 
+bitgen -intstyle ise -f SHIFTCODE_TOP.ut SHIFTCODE_TOP.ncd 
+xst -intstyle ise -ifn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.xst" -ofn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SHIFTCODE_TOP.ucf -p xc3s500e-fg320-4 "SHIFTCODE_TOP.ngc" SHIFTCODE_TOP.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o SHIFTCODE_TOP_map.ncd SHIFTCODE_TOP.ngd SHIFTCODE_TOP.pcf 
+par -w -intstyle ise -ol high -t 1 SHIFTCODE_TOP_map.ncd SHIFTCODE_TOP.ncd SHIFTCODE_TOP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SHIFTCODE_TOP.twx SHIFTCODE_TOP.ncd -o SHIFTCODE_TOP.twr SHIFTCODE_TOP.pcf -ucf SHIFTCODE_TOP.ucf 
+bitgen -intstyle ise -f SHIFTCODE_TOP.ut SHIFTCODE_TOP.ncd 
+xst -intstyle ise -ifn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.xst" -ofn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SHIFTCODE_TOP.ucf -p xc3s500e-fg320-4 "SHIFTCODE_TOP.ngc" SHIFTCODE_TOP.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o SHIFTCODE_TOP_map.ncd SHIFTCODE_TOP.ngd SHIFTCODE_TOP.pcf 
+par -w -intstyle ise -ol high -t 1 SHIFTCODE_TOP_map.ncd SHIFTCODE_TOP.ncd SHIFTCODE_TOP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SHIFTCODE_TOP.twx SHIFTCODE_TOP.ncd -o SHIFTCODE_TOP.twr SHIFTCODE_TOP.pcf -ucf SHIFTCODE_TOP.ucf 
+bitgen -intstyle ise -f SHIFTCODE_TOP.ut SHIFTCODE_TOP.ncd 
+xst -intstyle ise -ifn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.xst" -ofn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SHIFTCODE_TOP.ucf -p xc3s500e-fg320-4 "SHIFTCODE_TOP.ngc" SHIFTCODE_TOP.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o SHIFTCODE_TOP_map.ncd SHIFTCODE_TOP.ngd SHIFTCODE_TOP.pcf 
+par -w -intstyle ise -ol high -t 1 SHIFTCODE_TOP_map.ncd SHIFTCODE_TOP.ncd SHIFTCODE_TOP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SHIFTCODE_TOP.twx SHIFTCODE_TOP.ncd -o SHIFTCODE_TOP.twr SHIFTCODE_TOP.pcf -ucf SHIFTCODE_TOP.ucf 
+bitgen -intstyle ise -f SHIFTCODE_TOP.ut SHIFTCODE_TOP.ncd 
+xst -intstyle ise -ifn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.xst" -ofn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SHIFTCODE_TOP.ucf -p xc3s500e-fg320-4 "SHIFTCODE_TOP.ngc" SHIFTCODE_TOP.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o SHIFTCODE_TOP_map.ncd SHIFTCODE_TOP.ngd SHIFTCODE_TOP.pcf 
+par -w -intstyle ise -ol high -t 1 SHIFTCODE_TOP_map.ncd SHIFTCODE_TOP.ncd SHIFTCODE_TOP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SHIFTCODE_TOP.twx SHIFTCODE_TOP.ncd -o SHIFTCODE_TOP.twr SHIFTCODE_TOP.pcf -ucf SHIFTCODE_TOP.ucf 
+bitgen -intstyle ise -f SHIFTCODE_TOP.ut SHIFTCODE_TOP.ncd 
+xst -intstyle ise -ifn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.xst" -ofn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SHIFTCODE_TOP.ucf -p xc3s500e-fg320-4 "SHIFTCODE_TOP.ngc" SHIFTCODE_TOP.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o SHIFTCODE_TOP_map.ncd SHIFTCODE_TOP.ngd SHIFTCODE_TOP.pcf 
+par -w -intstyle ise -ol high -t 1 SHIFTCODE_TOP_map.ncd SHIFTCODE_TOP.ncd SHIFTCODE_TOP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SHIFTCODE_TOP.twx SHIFTCODE_TOP.ncd -o SHIFTCODE_TOP.twr SHIFTCODE_TOP.pcf -ucf SHIFTCODE_TOP.ucf 
+bitgen -intstyle ise -f SHIFTCODE_TOP.ut SHIFTCODE_TOP.ncd 
+xst -intstyle ise -ifn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.xst" -ofn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SHIFTCODE_TOP.ucf -p xc3s500e-fg320-4 "SHIFTCODE_TOP.ngc" SHIFTCODE_TOP.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o SHIFTCODE_TOP_map.ncd SHIFTCODE_TOP.ngd SHIFTCODE_TOP.pcf 
+par -w -intstyle ise -ol high -t 1 SHIFTCODE_TOP_map.ncd SHIFTCODE_TOP.ncd SHIFTCODE_TOP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SHIFTCODE_TOP.twx SHIFTCODE_TOP.ncd -o SHIFTCODE_TOP.twr SHIFTCODE_TOP.pcf -ucf SHIFTCODE_TOP.ucf 
+bitgen -intstyle ise -f SHIFTCODE_TOP.ut SHIFTCODE_TOP.ncd 
+xst -intstyle ise -ifn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.xst" -ofn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SHIFTCODE_TOP.ucf -p xc3s500e-fg320-4 "SHIFTCODE_TOP.ngc" SHIFTCODE_TOP.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o SHIFTCODE_TOP_map.ncd SHIFTCODE_TOP.ngd SHIFTCODE_TOP.pcf 
+par -w -intstyle ise -ol high -t 1 SHIFTCODE_TOP_map.ncd SHIFTCODE_TOP.ncd SHIFTCODE_TOP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SHIFTCODE_TOP.twx SHIFTCODE_TOP.ncd -o SHIFTCODE_TOP.twr SHIFTCODE_TOP.pcf -ucf SHIFTCODE_TOP.ucf 
+bitgen -intstyle ise -f SHIFTCODE_TOP.ut SHIFTCODE_TOP.ncd 
+xst -intstyle ise -ifn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.xst" -ofn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SHIFTCODE_TOP.ucf -p xc3s500e-fg320-4 "SHIFTCODE_TOP.ngc" SHIFTCODE_TOP.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o SHIFTCODE_TOP_map.ncd SHIFTCODE_TOP.ngd SHIFTCODE_TOP.pcf 
+par -w -intstyle ise -ol high -t 1 SHIFTCODE_TOP_map.ncd SHIFTCODE_TOP.ncd SHIFTCODE_TOP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SHIFTCODE_TOP.twx SHIFTCODE_TOP.ncd -o SHIFTCODE_TOP.twr SHIFTCODE_TOP.pcf -ucf SHIFTCODE_TOP.ucf 
+bitgen -intstyle ise -f SHIFTCODE_TOP.ut SHIFTCODE_TOP.ncd 
+xst -intstyle ise -ifn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.xst" -ofn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SHIFTCODE_TOP.ucf -p xc3s500e-fg320-4 "SHIFTCODE_TOP.ngc" SHIFTCODE_TOP.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o SHIFTCODE_TOP_map.ncd SHIFTCODE_TOP.ngd SHIFTCODE_TOP.pcf 
+par -w -intstyle ise -ol high -t 1 SHIFTCODE_TOP_map.ncd SHIFTCODE_TOP.ncd SHIFTCODE_TOP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SHIFTCODE_TOP.twx SHIFTCODE_TOP.ncd -o SHIFTCODE_TOP.twr SHIFTCODE_TOP.pcf -ucf SHIFTCODE_TOP.ucf 
+bitgen -intstyle ise -f SHIFTCODE_TOP.ut SHIFTCODE_TOP.ncd 
+xst -intstyle ise -ifn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.xst" -ofn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SHIFTCODE_TOP.ucf -p xc3s500e-fg320-4 "SHIFTCODE_TOP.ngc" SHIFTCODE_TOP.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o SHIFTCODE_TOP_map.ncd SHIFTCODE_TOP.ngd SHIFTCODE_TOP.pcf 
+par -w -intstyle ise -ol high -t 1 SHIFTCODE_TOP_map.ncd SHIFTCODE_TOP.ncd SHIFTCODE_TOP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SHIFTCODE_TOP.twx SHIFTCODE_TOP.ncd -o SHIFTCODE_TOP.twr SHIFTCODE_TOP.pcf -ucf SHIFTCODE_TOP.ucf 
+bitgen -intstyle ise -f SHIFTCODE_TOP.ut SHIFTCODE_TOP.ncd 
+xst -intstyle ise -ifn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.xst" -ofn "D:/IC lab/STUDENTCODE_SHIFT_DEMO/SHIFTCODE_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SHIFTCODE_TOP.ucf -p xc3s500e-fg320-4 "SHIFTCODE_TOP.ngc" SHIFTCODE_TOP.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o SHIFTCODE_TOP_map.ncd SHIFTCODE_TOP.ngd SHIFTCODE_TOP.pcf 
+par -w -intstyle ise -ol high -t 1 SHIFTCODE_TOP_map.ncd SHIFTCODE_TOP.ncd SHIFTCODE_TOP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SHIFTCODE_TOP.twx SHIFTCODE_TOP.ncd -o SHIFTCODE_TOP.twr SHIFTCODE_TOP.pcf -ucf SHIFTCODE_TOP.ucf 
+bitgen -intstyle ise -f SHIFTCODE_TOP.ut SHIFTCODE_TOP.ncd 

@@ -1,0 +1,12 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed Sep 27 09:28:54 2023
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "dio" LOCATE = SITE "C7" LEVEL 1;
+COMP "stb" LOCATE = SITE "E8" LEVEL 1;
+COMP "clki" LOCATE = SITE "C9" LEVEL 1;
+COMP "clko" LOCATE = SITE "F8" LEVEL 1;
+NET "clki_BUFGP/IBUFG" BEL "clki_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

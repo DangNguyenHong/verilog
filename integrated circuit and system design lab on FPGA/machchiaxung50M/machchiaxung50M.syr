@@ -1,0 +1,363 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: machchiaxung50M.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "machchiaxung50M.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "machchiaxung50M"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : machchiaxung50M
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "machchiaxung50M.v" in library work
+Module <machchiaxung50M> compiled
+No errors in compilation
+Analysis of file <"machchiaxung50M.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <machchiaxung50M> in library <work> with parameters.
+	N = "00000000000000000000000000011010"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <machchiaxung50M>.
+	N = 32'sb00000000000000000000000000011010
+Module <machchiaxung50M> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <machchiaxung50M>.
+    Related source file is "machchiaxung50M.v".
+    Found 26-bit up counter for signal <r_reg>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <machchiaxung50M> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 26-bit up counter                                     : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 26-bit up counter                                     : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <r_reg_3> of sequential type is unconnected in block <machchiaxung50M>.
+WARNING:Xst:2677 - Node <r_reg_4> of sequential type is unconnected in block <machchiaxung50M>.
+WARNING:Xst:2677 - Node <r_reg_5> of sequential type is unconnected in block <machchiaxung50M>.
+WARNING:Xst:2677 - Node <r_reg_6> of sequential type is unconnected in block <machchiaxung50M>.
+WARNING:Xst:2677 - Node <r_reg_7> of sequential type is unconnected in block <machchiaxung50M>.
+WARNING:Xst:2677 - Node <r_reg_8> of sequential type is unconnected in block <machchiaxung50M>.
+WARNING:Xst:2677 - Node <r_reg_9> of sequential type is unconnected in block <machchiaxung50M>.
+WARNING:Xst:2677 - Node <r_reg_10> of sequential type is unconnected in block <machchiaxung50M>.
+WARNING:Xst:2677 - Node <r_reg_11> of sequential type is unconnected in block <machchiaxung50M>.
+WARNING:Xst:2677 - Node <r_reg_12> of sequential type is unconnected in block <machchiaxung50M>.
+WARNING:Xst:2677 - Node <r_reg_13> of sequential type is unconnected in block <machchiaxung50M>.
+WARNING:Xst:2677 - Node <r_reg_14> of sequential type is unconnected in block <machchiaxung50M>.
+WARNING:Xst:2677 - Node <r_reg_15> of sequential type is unconnected in block <machchiaxung50M>.
+WARNING:Xst:2677 - Node <r_reg_16> of sequential type is unconnected in block <machchiaxung50M>.
+WARNING:Xst:2677 - Node <r_reg_17> of sequential type is unconnected in block <machchiaxung50M>.
+WARNING:Xst:2677 - Node <r_reg_18> of sequential type is unconnected in block <machchiaxung50M>.
+WARNING:Xst:2677 - Node <r_reg_19> of sequential type is unconnected in block <machchiaxung50M>.
+WARNING:Xst:2677 - Node <r_reg_20> of sequential type is unconnected in block <machchiaxung50M>.
+WARNING:Xst:2677 - Node <r_reg_21> of sequential type is unconnected in block <machchiaxung50M>.
+WARNING:Xst:2677 - Node <r_reg_22> of sequential type is unconnected in block <machchiaxung50M>.
+WARNING:Xst:2677 - Node <r_reg_23> of sequential type is unconnected in block <machchiaxung50M>.
+WARNING:Xst:2677 - Node <r_reg_24> of sequential type is unconnected in block <machchiaxung50M>.
+WARNING:Xst:2677 - Node <r_reg_25> of sequential type is unconnected in block <machchiaxung50M>.
+
+Optimizing unit <machchiaxung50M> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block machchiaxung50M, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 3
+ Flip-Flops                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : machchiaxung50M.ngr
+Top Level Output File Name         : machchiaxung50M
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 3
+
+Cell Usage :
+# BELS                             : 10
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 2
+#      MUXCY                       : 2
+#      VCC                         : 1
+#      XORCY                       : 3
+# FlipFlops/Latches                : 3
+#      FDC                         : 3
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 2
+#      IBUF                        : 1
+#      OBUF                        : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                        2  out of   4656     0%  
+ Number of Slice Flip Flops:              3  out of   9312     0%  
+ Number of 4 input LUTs:                  3  out of   9312     0%  
+ Number of IOs:                           3
+ Number of bonded IOBs:                   3  out of    232     1%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 3     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 3     |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 3.466ns (Maximum Frequency: 288.517MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 4.310ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.466ns (frequency: 288.517MHz)
+  Total number of paths / destination ports: 6 / 3
+-------------------------------------------------------------------------
+Delay:               3.466ns (Levels of Logic = 3)
+  Source:            r_reg_1 (FF)
+  Destination:       r_reg_2 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: r_reg_1 to r_reg_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.591   0.595  r_reg_1 (r_reg_1)
+     LUT1:I0->O            1   0.704   0.000  Mcount_r_reg_cy<1>_rt (Mcount_r_reg_cy<1>_rt)
+     MUXCY:S->O            0   0.464   0.000  Mcount_r_reg_cy<1> (Mcount_r_reg_cy<1>)
+     XORCY:CI->O           1   0.804   0.000  Mcount_r_reg_xor<2> (Result<2>)
+     FDC:D                     0.308          r_reg_2
+    ----------------------------------------
+    Total                      3.466ns (2.871ns logic, 0.595ns route)
+                                       (82.8% logic, 17.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.310ns (Levels of Logic = 1)
+  Source:            r_reg_2 (FF)
+  Destination:       clkOut (PAD)
+  Source Clock:      clk rising
+
+  Data Path: r_reg_2 to clkOut
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.591   0.447  r_reg_2 (r_reg_2)
+     OBUF:I->O                 3.272          clkOut_OBUF (clkOut)
+    ----------------------------------------
+    Total                      4.310ns (3.863ns logic, 0.447ns route)
+                                       (89.6% logic, 10.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.76 secs
+ 
+--> 
+
+Total memory usage is 4496908 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   23 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

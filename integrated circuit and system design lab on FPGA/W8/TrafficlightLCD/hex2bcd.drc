@@ -1,0 +1,8 @@
+Release 14.7 Drc P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Sat Oct 07 10:49:39 2023
+
+drc -z HEX2BCD.ncd HEX2BCD.pcf
+
+DRC detected 0 errors and 0 warnings.

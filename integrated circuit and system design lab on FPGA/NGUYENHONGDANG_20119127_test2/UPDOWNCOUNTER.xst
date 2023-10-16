@@ -1,0 +1,5 @@
+set -tmpdir "D:/IC lab/NGUYENHONGDANG_20119127_test2/xst/projnav.tmp"
+set -xsthdpdir "D:/IC lab/NGUYENHONGDANG_20119127_test2/xst"
+elaborate
+-ifn UPDOWNCOUNTER.prj
+-ifmt mixed

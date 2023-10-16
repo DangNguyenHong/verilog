@@ -1,0 +1,11 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "clk" LOC = C9;
+NET "lcd_e" LOC = M18;
+NET "lcd_rs" LOC = L18;
+NET "lcd_rw" LOC = L17;
+NET "lcd_4" LOC = R15;
+NET "lcd_5" LOC = R16;
+NET "lcd_6" LOC = P17;
+NET "lcd_7" LOC = M15;

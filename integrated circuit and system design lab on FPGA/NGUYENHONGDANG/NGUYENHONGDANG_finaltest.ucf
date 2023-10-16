@@ -1,0 +1,18 @@
+
+
+NET "sw23[1]" LOC = N17;
+NET "sw23[0]" LOC = H18;
+NET "clki" LOC = C9;
+NET "clko" LOC = F8;
+NET "dio" LOC = C7;
+NET "stb" LOC = E8;
+NET "sw0" LOC = L13;
+NET "sw1" LOC = L14;
+
+
+NET "clko" IOSTANDARD = LVCMOS25;
+NET "dio" IOSTANDARD = LVCMOS25;
+
+# PlanAhead Generated IO constraints 
+
+NET "stb" IOSTANDARD = LVCMOS25;

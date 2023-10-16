@@ -1,0 +1,5 @@
+set -tmpdir "D:/IC lab/SynCounter4bit/xst/projnav.tmp"
+set -xsthdpdir "D:/IC lab/SynCounter4bit/xst"
+elaborate
+-ifn SynCounter4bit.prj
+-ifmt mixed

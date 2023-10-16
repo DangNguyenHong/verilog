@@ -1,0 +1,3 @@
+verilog work "../TM1638/TM1638.v"
+verilog work "../TM1638/ClkDiv_781k.v"
+verilog work "TM1638_TOP.v"

@@ -1,0 +1,689 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Reading design: Top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Top"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : Top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "SHIFT_CODE.v" in library work
+Compiling verilog file "LCDModule.v" in library work
+Module <SHIFTCODE> compiled
+Compiling verilog file "CHIAXUNG.v" in library work
+Module <LCD> compiled
+Compiling verilog file "Top.v" in library work
+Module <CHIAXUNG> compiled
+Module <Top> compiled
+No errors in compilation
+Analysis of file <"Top.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <Top> in library <work>.
+
+Analyzing hierarchy for module <CHIAXUNG> in library <work>.
+
+Analyzing hierarchy for module <SHIFTCODE> in library <work>.
+
+Analyzing hierarchy for module <LCD> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <Top>.
+Module <Top> is correct for synthesis.
+ 
+Analyzing module <CHIAXUNG> in library <work>.
+Module <CHIAXUNG> is correct for synthesis.
+ 
+Analyzing module <SHIFTCODE> in library <work>.
+Module <SHIFTCODE> is correct for synthesis.
+ 
+Analyzing module <LCD> in library <work>.
+INFO:Xst:1432 - Contents of array <chars_data> may be accessed with a negative index, causing simulation mismatch.
+INFO:Xst:1433 - Contents of array <chars_data> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1432 - Contents of array <chars_data> may be accessed with a negative index, causing simulation mismatch.
+INFO:Xst:1433 - Contents of array <chars_data> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+Module <LCD> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <CHIAXUNG>.
+    Related source file is "CHIAXUNG.v".
+WARNING:Xst:1872 - Variable <cnt1> is used but never assigned.
+    Found 1-bit register for signal <clk_1hz>.
+    Found 32-bit up counter for signal <cnt>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <CHIAXUNG> synthesized.
+
+
+Synthesizing Unit <SHIFTCODE>.
+    Related source file is "SHIFT_CODE.v".
+    Found 128-bit register for signal <shifter>.
+    Summary:
+	inferred 128 D-type flip-flop(s).
+Unit <SHIFTCODE> synthesized.
+
+
+Synthesizing Unit <LCD>.
+    Related source file is "LCDModule.v".
+WARNING:Xst:653 - Signal <write> is used but never assigned. This sourceless signal will be automatically connected to value 10.
+WARNING:Xst:653 - Signal <on_delay> is used but never assigned. This sourceless signal will be automatically connected to value 1101.
+WARNING:Xst:646 - Signal <chars_hold<256>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <before_delay> is used but never assigned. This sourceless signal will be automatically connected to value 11.
+    Found finite state machine <FSM_0> for signal <delay_state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 6                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Clock enable       | delay_state$cmp_lt0000    (positive)           |
+    | Power Up State     | 00                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 16x6-bit ROM for signal <lcd_code$mux0002>.
+    Found 1-bit register for signal <lcd_4>.
+    Found 1-bit register for signal <lcd_5>.
+    Found 1-bit register for signal <lcd_6>.
+    Found 1-bit register for signal <lcd_7>.
+    Found 1-bit register for signal <lcd_e>.
+    Found 1-bit register for signal <lcd_rs>.
+    Found 1-bit register for signal <lcd_rw>.
+    Found 257-bit register for signal <chars_hold>.
+    Found 20-bit register for signal <count>.
+    Found 20-bit adder for signal <count$share0000>.
+    Found 7-bit up counter for signal <Cs>.
+    Found 24-bit comparator not equal for signal <Cs$cmp_ne0000> created at line 156.
+    Found 24-bit comparator equal for signal <delay_state$cmp_eq0000> created at line 78.
+    Found 7-bit comparator less for signal <delay_state$cmp_lt0000> created at line 72.
+    Found 7-bit comparator greatequal for signal <lcd_4$cmp_ge0000> created at line 72.
+    Found 6-bit register for signal <lcd_code>.
+    Found 7-bit comparator less for signal <lcd_code$cmp_lt0000> created at line 146.
+    Found 7-bit comparator less for signal <lcd_code$cmp_lt0001> created at line 121.
+    Found 4-bit 64-to-1 multiplexer for signal <lcd_code$varindex0000> created at line 147.
+    Found 4-bit 64-to-1 multiplexer for signal <lcd_code$varindex0001> created at line 149.
+    Found 24-bit register for signal <off_delay>.
+    Found 7-bit comparator greater for signal <off_delay$cmp_gt0000> created at line 65.
+    Found 7-bit comparator less for signal <off_delay$cmp_lt0000> created at line 58.
+INFO:Xst:738 - HDL ADVISOR - 257 flip-flops were inferred for signal <chars_hold>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 ROM(s).
+	inferred   1 Counter(s).
+	inferred 314 D-type flip-flop(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred   8 Comparator(s).
+	inferred   8 Multiplexer(s).
+Unit <LCD> synthesized.
+
+
+Synthesizing Unit <Top>.
+    Related source file is "Top.v".
+WARNING:Xst:653 - Signal <chars<256>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+Unit <Top> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x6-bit ROM                                          : 1
+# Adders/Subtractors                                   : 3
+ 20-bit adder                                          : 1
+ 8-bit subtractor                                      : 2
+# Counters                                             : 2
+ 32-bit up counter                                     : 1
+ 7-bit up counter                                      : 1
+# Registers                                            : 13
+ 1-bit register                                        : 8
+ 128-bit register                                      : 1
+ 20-bit register                                       : 1
+ 24-bit register                                       : 1
+ 257-bit register                                      : 1
+ 6-bit register                                        : 1
+# Comparators                                          : 8
+ 24-bit comparator equal                               : 1
+ 24-bit comparator not equal                           : 1
+ 7-bit comparator greatequal                           : 1
+ 7-bit comparator greater                              : 1
+ 7-bit comparator less                                 : 4
+# Multiplexers                                         : 2
+ 4-bit 64-to-1 multiplexer                             : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <lcd/delay_state/FSM> on signal <delay_state[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 11
+ 11    | 10
+-------------------
+WARNING:Xst:1710 - FF/Latch <chars_hold_85> (without init value) has a constant value of 1 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_86> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_87> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_88> (without init value) has a constant value of 1 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_89> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_90> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_91> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_92> (without init value) has a constant value of 1 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_93> (without init value) has a constant value of 1 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_94> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_95> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_96> (without init value) has a constant value of 1 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_97> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_98> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_99> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_100> (without init value) has a constant value of 1 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_101> (without init value) has a constant value of 1 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_68> (without init value) has a constant value of 1 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_69> (without init value) has a constant value of 1 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_70> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_71> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_72> (without init value) has a constant value of 1 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_73> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_74> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_75> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_76> (without init value) has a constant value of 1 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_77> (without init value) has a constant value of 1 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_78> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_79> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_80> (without init value) has a constant value of 1 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_81> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_82> (without init value) has a constant value of 1 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_83> (without init value) has a constant value of 1 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_84> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_119> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_120> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_121> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_122> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_123> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_124> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_125> (without init value) has a constant value of 1 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_126> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_127> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <off_delay_1> has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <off_delay_2> has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <off_delay_11> has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <off_delay_18> has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <off_delay_20> has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <off_delay_21> has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <off_delay_22> has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <off_delay_23> has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_102> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_103> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_104> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_105> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_106> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_107> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_108> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_109> (without init value) has a constant value of 1 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_110> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_111> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_112> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_113> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_114> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_115> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_116> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_117> (without init value) has a constant value of 1 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_118> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_17> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_18> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_19> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_20> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_21> (without init value) has a constant value of 1 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_22> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_23> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_24> (without init value) has a constant value of 1 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_25> (without init value) has a constant value of 1 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_26> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_27> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_28> (without init value) has a constant value of 1 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_29> (without init value) has a constant value of 1 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_30> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_31> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_32> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_33> (without init value) has a constant value of 1 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_0> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_1> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_2> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_3> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_4> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_5> (without init value) has a constant value of 1 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_6> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_7> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_8> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_9> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_10> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_11> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_12> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_13> (without init value) has a constant value of 1 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_14> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_15> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_16> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_51> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_52> (without init value) has a constant value of 1 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_53> (without init value) has a constant value of 1 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_54> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_55> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_56> (without init value) has a constant value of 1 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_57> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_58> (without init value) has a constant value of 1 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_59> (without init value) has a constant value of 1 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_60> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_61> (without init value) has a constant value of 1 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_62> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_63> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_64> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_65> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_66> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_67> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_34> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_35> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_36> (without init value) has a constant value of 1 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_37> (without init value) has a constant value of 1 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_38> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_39> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_40> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_41> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_42> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_43> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_44> (without init value) has a constant value of 1 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_45> (without init value) has a constant value of 1 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_46> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_47> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_48> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_49> (without init value) has a constant value of 1 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <chars_hold_50> (without init value) has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <chars_hold_256> of sequential type is unconnected in block <lcd>.
+WARNING:Xst:2677 - Node <chars_hold_256> of sequential type is unconnected in block <LCD>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# ROMs                                                 : 1
+ 16x6-bit ROM                                          : 1
+# Adders/Subtractors                                   : 3
+ 20-bit adder                                          : 1
+ 6-bit subtractor                                      : 2
+# Counters                                             : 2
+ 32-bit up counter                                     : 1
+ 7-bit up counter                                      : 1
+# Registers                                            : 442
+ Flip-Flops                                            : 442
+# Comparators                                          : 8
+ 24-bit comparator equal                               : 1
+ 24-bit comparator not equal                           : 1
+ 7-bit comparator greatequal                           : 1
+ 7-bit comparator greater                              : 1
+ 7-bit comparator less                                 : 4
+# Multiplexers                                         : 8
+ 1-bit 64-to-1 multiplexer                             : 8
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <off_delay_1> has a constant value of 0 in block <LCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <off_delay_2> has a constant value of 0 in block <LCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <off_delay_11> has a constant value of 0 in block <LCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <off_delay_18> has a constant value of 0 in block <LCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <off_delay_20> has a constant value of 0 in block <LCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <off_delay_21> has a constant value of 0 in block <LCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <off_delay_22> has a constant value of 0 in block <LCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <off_delay_23> has a constant value of 0 in block <LCD>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <chars_hold_5> in Unit <LCD> is equivalent to the following 36 FFs/Latches, which will be removed : <chars_hold_13> <chars_hold_21> <chars_hold_24> <chars_hold_25> <chars_hold_28> <chars_hold_29> <chars_hold_33> <chars_hold_36> <chars_hold_37> <chars_hold_44> <chars_hold_45> <chars_hold_49> <chars_hold_52> <chars_hold_53> <chars_hold_56> <chars_hold_58> <chars_hold_59> <chars_hold_61> <chars_hold_68> <chars_hold_69> <chars_hold_72> <chars_hold_76> <chars_hold_77> <chars_hold_80> <chars_hold_82> <chars_hold_83> <chars_hold_85> <chars_hold_88> <chars_hold_92> <chars_hold_93> <chars_hold_96> <chars_hold_100> <chars_hold_101> <chars_hold_109> <chars_hold_117> <chars_hold_125> 
+INFO:Xst:2261 - The FF/Latch <chars_hold_0> in Unit <LCD> is equivalent to the following 90 FFs/Latches, which will be removed : <chars_hold_1> <chars_hold_2> <chars_hold_3> <chars_hold_4> <chars_hold_6> <chars_hold_7> <chars_hold_8> <chars_hold_9> <chars_hold_10> <chars_hold_11> <chars_hold_12> <chars_hold_14> <chars_hold_15> <chars_hold_16> <chars_hold_17> <chars_hold_18> <chars_hold_19> <chars_hold_20> <chars_hold_22> <chars_hold_23> <chars_hold_26> <chars_hold_27> <chars_hold_30> <chars_hold_31> <chars_hold_32> <chars_hold_34> <chars_hold_35> <chars_hold_38> <chars_hold_39> <chars_hold_40> <chars_hold_41> <chars_hold_42> <chars_hold_43> <chars_hold_46> <chars_hold_47> <chars_hold_48> <chars_hold_50> <chars_hold_51> <chars_hold_54> <chars_hold_55> <chars_hold_57> <chars_hold_60> <chars_hold_62> <chars_hold_63> <chars_hold_64> <chars_hold_65> <chars_hold_66> <chars_hold_67> <chars_hold_70> <chars_hold_71> <chars_hold_73> <chars_hold_74> <chars_hold_75> <chars_hold_78> <chars_hold_79> <chars_hold_81>
+   <chars_hold_84> <chars_hold_86> <chars_hold_87> <chars_hold_89> <chars_hold_90> <chars_hold_91> <chars_hold_94> <chars_hold_95> <chars_hold_97> <chars_hold_98> <chars_hold_99> <chars_hold_102> <chars_hold_103> <chars_hold_104> <chars_hold_105> <chars_hold_106> <chars_hold_107> <chars_hold_108> <chars_hold_110> <chars_hold_111> <chars_hold_112> <chars_hold_113> <chars_hold_114> <chars_hold_115> <chars_hold_116> <chars_hold_118> <chars_hold_119> <chars_hold_120> <chars_hold_121> <chars_hold_122> <chars_hold_123> <chars_hold_124> <chars_hold_126> <chars_hold_127> 
+WARNING:Xst:1710 - FF/Latch <chars_hold_0> (without init value) has a constant value of 0 in block <LCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <chars_hold_5> (without init value) has a constant value of 1 in block <LCD>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <Top> ...
+
+Optimizing unit <SHIFTCODE> ...
+
+Optimizing unit <LCD> ...
+WARNING:Xst:1293 - FF/Latch <off_delay_0> has a constant value of 1 in block <LCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <off_delay_7> has a constant value of 1 in block <LCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <lcd_code_4> (without init value) has a constant value of 0 in block <LCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <lcd_rw> (without init value) has a constant value of 0 in block <LCD>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <off_delay_14> in Unit <LCD> is equivalent to the following 2 FFs/Latches, which will be removed : <off_delay_16> <off_delay_17> 
+INFO:Xst:2261 - The FF/Latch <off_delay_6> in Unit <LCD> is equivalent to the following FF/Latch, which will be removed : <off_delay_10> 
+INFO:Xst:2261 - The FF/Latch <off_delay_5> in Unit <LCD> is equivalent to the following 2 FFs/Latches, which will be removed : <off_delay_13> <off_delay_19> 
+WARNING:Xst:1710 - FF/Latch <lcd_code_4> (without init value) has a constant value of 0 in block <LCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <lcd_rw> (without init value) has a constant value of 0 in block <LCD>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <off_delay_5> in Unit <LCD> is equivalent to the following 2 FFs/Latches, which will be removed : <off_delay_13> <off_delay_19> 
+INFO:Xst:2261 - The FF/Latch <off_delay_14> in Unit <LCD> is equivalent to the following 2 FFs/Latches, which will be removed : <off_delay_16> <off_delay_17> 
+INFO:Xst:2261 - The FF/Latch <off_delay_6> in Unit <LCD> is equivalent to the following FF/Latch, which will be removed : <off_delay_10> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Top, actual ratio is 6.
+FlipFlop lcd/Cs_1 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 339
+ Flip-Flops                                            : 339
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Top.ngr
+Top Level Output File Name         : Top
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 8
+
+Cell Usage :
+# BELS                             : 564
+#      GND                         : 1
+#      INV                         : 6
+#      LUT1                        : 50
+#      LUT2                        : 27
+#      LUT2_D                      : 2
+#      LUT3                        : 146
+#      LUT3_D                      : 2
+#      LUT3_L                      : 1
+#      LUT4                        : 72
+#      LUT4_D                      : 6
+#      LUT4_L                      : 6
+#      MUXCY                       : 68
+#      MUXF5                       : 70
+#      MUXF6                       : 32
+#      MUXF7                       : 16
+#      MUXF8                       : 6
+#      VCC                         : 1
+#      XORCY                       : 52
+# FlipFlops/Latches                : 339
+#      FD                          : 129
+#      FDE                         : 164
+#      FDR                         : 36
+#      FDRE                        : 1
+#      FDRS                        : 1
+#      FDS                         : 8
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 7
+#      OBUF                        : 7
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      304  out of   4656     6%  
+ Number of Slice Flip Flops:            339  out of   9312     3%  
+ Number of 4 input LUTs:                318  out of   9312     3%  
+ Number of IOs:                           8
+ Number of bonded IOBs:                   8  out of    232     3%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 211   |
+clock/clk_1hz1                     | BUFG                   | 128   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 8.751ns (Maximum Frequency: 114.273MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 4.283ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 8.751ns (frequency: 114.273MHz)
+  Total number of paths / destination ports: 9344 / 295
+-------------------------------------------------------------------------
+Delay:               8.751ns (Levels of Logic = 6)
+  Source:            lcd/count_15 (FF)
+  Destination:       lcd/count_19 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: lcd/count_15 to lcd/count_19
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              3   0.591   0.706  lcd/count_15 (lcd/count_15)
+     LUT4:I0->O            1   0.704   0.499  lcd/chars_hold_and0000125 (lcd/chars_hold_and0000125)
+     LUT4:I1->O            4   0.704   0.591  lcd/chars_hold_and0000176 (lcd/N20)
+     LUT4:I3->O            2   0.704   0.482  lcd/delay_state_cmp_eq0002 (lcd/delay_state_cmp_eq0002)
+     LUT4:I2->O            2   0.704   0.451  lcd/count_mux0000<0>1_SW1 (N28)
+     LUT4_D:I3->O          9   0.704   0.899  lcd/count_mux0000<0>1 (lcd/N0)
+     LUT2:I1->O            1   0.704   0.000  lcd/count_mux0000<17>1 (lcd/count_mux0000<17>)
+     FDE:D                     0.308          lcd/count_2
+    ----------------------------------------
+    Total                      8.751ns (5.123ns logic, 3.628ns route)
+                                       (58.5% logic, 41.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock/clk_1hz1'
+  Clock period: 1.346ns (frequency: 742.942MHz)
+  Total number of paths / destination ports: 128 / 128
+-------------------------------------------------------------------------
+Delay:               1.346ns (Levels of Logic = 0)
+  Source:            shift/shifter_7 (FF)
+  Destination:       shift/shifter_127 (FF)
+  Source Clock:      clock/clk_1hz1 rising
+  Destination Clock: clock/clk_1hz1 rising
+
+  Data Path: shift/shifter_7 to shift/shifter_127
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.591   0.447  shift/shifter_7 (shift/shifter_7)
+     FD:D                      0.308          shift/shifter_127
+    ----------------------------------------
+    Total                      1.346ns (0.899ns logic, 0.447ns route)
+                                       (66.8% logic, 33.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 6 / 6
+-------------------------------------------------------------------------
+Offset:              4.283ns (Levels of Logic = 1)
+  Source:            lcd/lcd_4 (FF)
+  Destination:       lcd_4 (PAD)
+  Source Clock:      clk rising
+
+  Data Path: lcd/lcd_4 to lcd_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.591   0.420  lcd/lcd_4 (lcd/lcd_4)
+     OBUF:I->O                 3.272          lcd_4_OBUF (lcd_4)
+    ----------------------------------------
+    Total                      4.283ns (3.863ns logic, 0.420ns route)
+                                       (90.2% logic, 9.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 11.01 secs
+ 
+--> 
+
+Total memory usage is 4513548 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  160 (   0 filtered)
+Number of infos    :   14 (   0 filtered)
+

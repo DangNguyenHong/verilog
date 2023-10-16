@@ -1,0 +1,90 @@
+# clock
+NET "clk" LOC = C9;
+NET "clk" IOSTANDARD = LVCMOS33;
+NET "clk" PERIOD = 20 ns HIGH 50 %;
+# LCD control inputs
+NET "lcd_e" LOC = M18;
+NET "lcd_e" IOSTANDARD = LVCMOS33;
+NET "lcd_e" DRIVE = 4;
+NET "lcd_e" SLEW = SLOW;
+NET "lcd_rs" LOC = L18;
+NET "lcd_rs" IOSTANDARD = LVCMOS33;
+NET "lcd_rs" DRIVE = 4;
+NET "lcd_rs" SLEW = SLOW;
+NET "lcd_rw" LOC = L17;
+NET "lcd_rw" IOSTANDARD = LVCMOS33;
+NET "lcd_rw" DRIVE = 4;
+NET "lcd_rw" SLEW = SLOW;
+# The LCD four-bit data interface
+NET "lcd_4" LOC = R15;
+NET "lcd_4" IOSTANDARD = LVCMOS33;
+NET "lcd_4" DRIVE = 4;
+NET "lcd_4" SLEW = SLOW;
+NET "lcd_5" LOC = R16;
+NET "lcd_5" IOSTANDARD = LVCMOS33;
+NET "lcd_5" DRIVE = 4;
+NET "lcd_5" SLEW = SLOW;
+NET "lcd_6" LOC = P17;
+NET "lcd_6" IOSTANDARD = LVCMOS33;
+NET "lcd_6" DRIVE = 4;
+NET "lcd_6" SLEW = SLOW;
+NET "lcd_7" LOC = M15;
+NET "lcd_7" IOSTANDARD = LVCMOS33;
+NET "lcd_7" DRIVE = 4;
+NET "lcd_7" SLEW = SLOW;
+
+# PlanAhead Generated physical constraints 
+
+NET "rs" LOC = L13;
+
+# PlanAhead Generated IO constraints 
+
+NET "rs" IOSTANDARD = LVCMOS33;
+
+# PlanAhead Generated physical constraints 
+
+NET "D1" LOC = F9;
+
+# PlanAhead Generated IO constraints 
+
+NET "D1" IOSTANDARD = LVCMOS33;
+
+# PlanAhead Generated physical constraints 
+
+NET "D2" LOC = E11;
+
+# PlanAhead Generated IO constraints 
+
+NET "D2" IOSTANDARD = LVCMOS33;
+
+# PlanAhead Generated physical constraints 
+
+NET "V1" LOC = E9;
+
+# PlanAhead Generated IO constraints 
+
+NET "V1" IOSTANDARD = LVCMOS33;
+
+# PlanAhead Generated physical constraints 
+
+NET "V2" LOC = E12;
+
+# PlanAhead Generated IO constraints 
+
+NET "V2" IOSTANDARD = LVCMOS33;
+
+# PlanAhead Generated physical constraints 
+
+NET "X1" LOC = D11;
+
+# PlanAhead Generated IO constraints 
+
+NET "X1" IOSTANDARD = LVCMOS33;
+
+# PlanAhead Generated physical constraints 
+
+NET "X2" LOC = F12;
+
+# PlanAhead Generated IO constraints 
+
+NET "X2" IOSTANDARD = LVCMOS33;

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\IC lab\ledtudongTSP_PST\ledtudongTSP_PST.ncd
+OUTFILE=D:\IC lab\ledtudongTSP_PST\ledtudongTSP_PST.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=D:\IC lab\ledtudongTSP_PST
+LICENSE=ISE
+USER_INFO=212545845_0_0_004

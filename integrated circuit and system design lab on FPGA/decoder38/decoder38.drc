@@ -1,0 +1,8 @@
+Release 14.7 Drc P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Mon Sep 04 21:04:15 2023
+
+drc -z decoder38.ncd decoder38.pcf
+
+DRC detected 0 errors and 0 warnings.

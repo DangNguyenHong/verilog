@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "D:/IC lab/W8/CountLCD/HEX2BCD.xst" -ofn "D:/IC lab/W8/CountLCD/HEX2BCD.syr" 
+xst -intstyle ise -ifn "D:/IC lab/W8/TrafficlightLCD/HEX2BCD.xst" -ofn "D:/IC lab/W8/TrafficlightLCD/HEX2BCD.syr" 
+xst -intstyle ise -ifn "D:/IC lab/W8/TrafficlightLCD/HEX2BCD.xst" -ofn "D:/IC lab/W8/TrafficlightLCD/HEX2BCD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "HEX2BCD.ngc" HEX2BCD.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o HEX2BCD_map.ncd HEX2BCD.ngd HEX2BCD.pcf 
+par -w -intstyle ise -ol high -t 1 HEX2BCD_map.ncd HEX2BCD.ncd HEX2BCD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml HEX2BCD.twx HEX2BCD.ncd -o HEX2BCD.twr HEX2BCD.pcf 
+bitgen -intstyle ise -f HEX2BCD.ut HEX2BCD.ncd 

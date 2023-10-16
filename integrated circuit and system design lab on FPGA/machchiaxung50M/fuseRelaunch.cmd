@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "D:/IC lab/machchiaxung50M/machchiaxung50M_test_isim_beh.exe" -prj "D:/IC lab/machchiaxung50M/machchiaxung50M_test_beh.prj" "work.machchiaxung50M_test" "work.glbl" 

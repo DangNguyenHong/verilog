@@ -1,0 +1,14 @@
+xst -intstyle ise -ifn "D:/IC lab/TM1638_DEMO/TM1638_TOP.xst" -ofn "D:/IC lab/TM1638_DEMO/TM1638_TOP.syr" 
+xst -intstyle ise -ifn "D:/IC lab/TM1638_DEMO/TM1638_TOP.xst" -ofn "D:/IC lab/TM1638_DEMO/TM1638_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TM1638_TOP.ucf -p xc3s500e-fg320-4 "TM1638_TOP.ngc" TM1638_TOP.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o TM1638_TOP_map.ncd TM1638_TOP.ngd TM1638_TOP.pcf 
+par -w -intstyle ise -ol high -t 1 TM1638_TOP_map.ncd TM1638_TOP.ncd TM1638_TOP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TM1638_TOP.twx TM1638_TOP.ncd -o TM1638_TOP.twr TM1638_TOP.pcf -ucf TM1638_TOP.ucf 
+bitgen -intstyle ise -f TM1638_TOP.ut TM1638_TOP.ncd 
+xst -intstyle ise -ifn "D:/IC lab/TM1638_DEMO/TM1638_TOP.xst" -ofn "D:/IC lab/TM1638_DEMO/TM1638_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TM1638_TOP.ucf -p xc3s500e-fg320-4 "TM1638_TOP.ngc" TM1638_TOP.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o TM1638_TOP_map.ncd TM1638_TOP.ngd TM1638_TOP.pcf 
+par -w -intstyle ise -ol high -t 1 TM1638_TOP_map.ncd TM1638_TOP.ncd TM1638_TOP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TM1638_TOP.twx TM1638_TOP.ncd -o TM1638_TOP.twr TM1638_TOP.pcf -ucf TM1638_TOP.ucf 
+bitgen -intstyle ise -f TM1638_TOP.ut TM1638_TOP.ncd 
+xst -intstyle ise -ifn "D:/IC lab/TM1638_DEMO/TM1638_TOP.xst" -ofn "D:/IC lab/TM1638_DEMO/TM1638_TOP.syr" 
